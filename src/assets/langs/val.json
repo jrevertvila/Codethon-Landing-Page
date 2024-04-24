@@ -1,3 +1,25 @@
 {
-    "inicio": "Inici"
+    "header__inicio" : "Inici", 
+    "header__sobre_proyecto" : "Sobre el Projecte", 
+    "header__modelo_3d" : "Models 3D",
+    "header__vive_experiencia" : "Viu l'experiència", 
+    "header__sobre_nosotros" : "Sobre nosaltres", 
+    "home__titulo_principal" : "NOMBRE_PROYECTO: Immersió en la Tradició", 
+    "home_subtitulo" : "Viu les falles des d'un punt de vista únic", 
+    "home_boton" : "Més informació", 
+    "sobre_proyecto__titulo" : "Sobre el projecte",
+    "sobre_proyecto__descripcio" : "NOMBRE_PROYECTO busca apropar la història i tradició de les falles fent pàrticip al jugador. Dins del joc, podrá tallar, pintar, plantar i cremar la falla a la vegada que aprén sobre la història de Les Falles ", 
+    "modelos_3d__andamio" : "Andami", 
+    "modelos_3d__atril" : "Atril", 
+    "modelos_3d__cajas" : "Caixes",
+    "modelos_3d__carretilla" : "Carretó", 
+    "modelos_3d__escalera" : "Escala", 
+    "modelos_3d__gafaRV" : "Ulleres RV", 
+    "modelos_3d__logo_Artemis" : "Logo Artemis", 
+    "modelos_3d__mesa_corcho" : "Taula per a tallar", 
+    "modelos_3d__mesa_taller" : "Taula de ferramentes", 
+    "modelos_3d__pale" : "Palet", 
+    "modelos_3d__tijeras" : "Tisores", 
+    "sobre_nosotros__titulo" : "Sobre nosaltres", 
+    "sobre_nosotros" : ""
 }

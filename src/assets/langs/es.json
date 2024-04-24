@@ -1,3 +1,25 @@
 {
-    "inicio": "Inicio"
+    "header__inicio" : "Inicio", 
+    "header__sobre_proyecto" : "Sobre el Proyecto", 
+    "header__modelo_3d" : "Modelos 3D",
+    "header__vive_experiencia" : "Vive la experiencia", 
+    "header__sobre_nosotros" : "Sobre nosotros", 
+    "home__titulo_principal" : "NOMBRE_PROYECTO: Inmersión en la Tradición", 
+    "home__subtitulo" : "Vive las fallas desde un punto de vista único", 
+    "home__boton" : "Más información", 
+    "sobre_proyecto__titulo" : "Sobre el proyecto",
+    "sobre_proyecto__descripcio" : "NOMBRE_PROYECTO busca acercar la historia y tradición de las fallas haciendo participe al jugador. Dentro del juego, podrá tallar, pintar, plantar y quemar la falla a la vez que aprende sobre la historia de Las Fallas", 
+    "modelos_3d__andamio" : "Andamio", 
+    "modelos_3d__atril" : "Atril", 
+    "modelos_3d__cajas" : "Cajas",
+    "modelos_3d__carretilla" : "Carretilla", 
+    "modelos_3d__escalera" : "Escalera", 
+    "modelos_3d__gafaRV" : "Gafas RV", 
+    "modelos_3d__logo_Artemis" : "Logo Artemis", 
+    "modelos_3d__mesa_corcho" : "Mesa para tallar", 
+    "modelos_3d__mesa_taller" : "Mesa de herramientas", 
+    "modelos_3d__pale" : "Palé", 
+    "modelos_3d__tijeras" : "Tijeras", 
+    "sobre_nosotros__titulo" : "Sobre nosotros", 
+    "sobre_nosotros__" : ""
 }
