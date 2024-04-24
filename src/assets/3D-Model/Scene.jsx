@@ -9,11 +9,20 @@ Title: Apple iPhone 13 Pro Max
 
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
+import { useFrame } from '@react-three/fiber';
 
 export default function ModelIphone(props) {
   const { nodes, materials } = useGLTF('scene.gltf')
+  const groupRef = useRef();
+  useFrame(() => {
+    // Aquí puedes actualizar la rotación del modelo
+    if (groupRef.current) {
+      groupRef.current.rotation.y += 0.01; // Por ejemplo, rota en el eje Y a una velocidad de 0.01 radianes por fotograma
+    }
+  });
+
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} ref={groupRef}>
       <group scale={0.01}>
         <group scale={100}>
           <mesh geometry={nodes.Frame_Frame_0.geometry} material={materials.Frame} />
