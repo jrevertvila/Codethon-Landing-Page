@@ -1,0 +1,33 @@
+.modelos_section {
+    /* padding: ; */
+    padding-top: 40px;
+    padding: 40px 340px 60px 340px;
+}
+
+.modelos_section_titulo {
+    font-size: 68px;
+    /* font-size: clamp(32px, 4vw, 68px); */
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.modelos_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    /* flex: 1; */
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 40px 20px;
+    grid-template-areas:
+        ". . . ."
+        ". . . ."
+        ". . . .";
+    align-items: center;
+    justify-items: center; */
+
+
+}

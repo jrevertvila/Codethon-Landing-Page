@@ -10,7 +10,7 @@ Title: Apple iPhone 13 Pro Max
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
-export default function Model(props) {
+export default function ModelIphone(props) {
   const { nodes, materials } = useGLTF('scene.gltf')
   return (
     <group {...props} dispose={null}>
