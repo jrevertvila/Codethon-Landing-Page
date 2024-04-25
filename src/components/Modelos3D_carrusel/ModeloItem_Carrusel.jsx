@@ -1,13 +1,13 @@
-import './ModeloItem.css'
+import './ModeloItem_Carrusel.css'
 import Modal from './Modal/Modal';
 import { useState } from 'react';
 
-export default function ModeloItem({ src, alt, title, subtitle, modelo3d_filename, author }) {
+export default function ModeloItemCarousel({ src, alt, title, subtitle, modelo3d_filename, author }) {
 
     const [modalOpen, setModalOpen] = useState(false);
 
     const openModal = () => {
-        // console.log("open");
+        console.log("opesssn");
         setModalOpen(true);
     };
 

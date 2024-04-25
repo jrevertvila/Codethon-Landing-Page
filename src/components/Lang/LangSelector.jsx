@@ -14,7 +14,7 @@ export default function LangSelector() {
     }, [lang]);
 
     let setLanguage = (language) =>  {
-        console.log("cambiar lang");
+        // console.log("cambiar lang");
         setDropdown(!dropdown)
         i18n.changeLanguage(language)
         setLang(language)

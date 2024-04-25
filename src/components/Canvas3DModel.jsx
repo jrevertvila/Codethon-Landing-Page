@@ -4,7 +4,7 @@ import { Environment, OrbitControls } from "@react-three/drei";
 import ModelIphone from "../assets/3D-Model/Scene";
 
 export default function Canvas3DModel({ modelo3d_filename }) {
-    console.log(modelo3d_filename);
+    // console.log(modelo3d_filename);
     const [importedComponent, setImportedComponent] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
 

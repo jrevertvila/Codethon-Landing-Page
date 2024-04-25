@@ -1,0 +1,21 @@
+.carousel-root {
+    display: flex;
+    flex: 1;
+}
+
+
+.carousel.carousel-slider {
+    flex: 1;
+}
+
+.models_carousel_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.modelos__title  {
+    margin: 30px 0px;
+    width: 100%;
+    text-align: center;
+}
