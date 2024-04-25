@@ -20,7 +20,7 @@ export function Home() {
                     <button>{t('home__boton')}</button>
                 </div>
                 {/* <Canvas3DHome modelo3d_filename={"vision-pro/Scene.jsx"}/> */}
-                <img className='vision-pro-img' src={vision_pro} alt="visio pro" />
+                {/* <img className='vision-pro-img' src={vision_pro} alt="visio pro" /> */}
             </div>
 
 
