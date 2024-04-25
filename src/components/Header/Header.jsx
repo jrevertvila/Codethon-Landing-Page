@@ -8,8 +8,8 @@ export function Header () {
         <div className="header">
             <span>logo</span>
             <div className="nav">
-                <span>{t('inicio')}</span>
-                <span>Sobre el proyecto</span>
+                <span>{t('header__inicio')}</span>
+                <span>{t('header__sobre_proyecto')}</span>
                 <span>Modelos 3D</span>
                 <span>Vive la experiencia</span>
                 <span>Sobre Nosotros</span>
