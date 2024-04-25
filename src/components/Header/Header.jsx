@@ -10,9 +10,9 @@ export function Header () {
             <div className="nav">
                 <span>{t('header__inicio')}</span>
                 <span>{t('header__sobre_proyecto')}</span>
-                <span>Modelos 3D</span>
-                <span>Vive la experiencia</span>
-                <span>Sobre Nosotros</span>
+                <span>{t('header__modelo_3d')}</span>
+                <span>{t('header__vive_experiencia')}</span>
+                <span>{t('header__sobre_nosotros')}</span>
                 <LangSelector/>
             </div>
         </div>
