@@ -12,7 +12,8 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 export function AboutProject() {
     const { t } = useTranslation();
-    const [section, setSection] = useState('en_que_consiste');
+    let secciones = ["en_que_consiste","tecnologias","seccion3"]
+    const [section, setSection] = useState(secciones[0]);
 
     let change_section = (s) => {
         if (s != section) setSection('s')
@@ -23,26 +24,30 @@ export function AboutProject() {
             <span className='about_project__subtitle'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
             <div className='about_project__tabs_container'>
                 <header className='about_project__tabs_container__header'>
-                    <div className='about_project__tabs_container__header__section section_active' onClick={() => { setSection('en_que_consiste') }}>¿En que consiste?</div>
-                    <div className='about_project__tabs_container__header__section' onClick={() => { setSection('tecnologias') }}>¿Que tecnologias utilizamos?</div>
-                    <div className='about_project__tabs_container__header__section' onClick={() => { setSection('seccion3') }}>Seccion 3</div>
+                    <div className={"about_project__tabs_container__header__section" + (section == secciones[0] ? " section_active" : '')} onClick={() => { setSection(secciones[0]) }}>¿En que consiste?</div>
+
+
+                    <div className={"about_project__tabs_container__header__section" + (section == secciones[1] ? " section_active" : '')} onClick={() => { setSection(secciones[1]) }}>¿Que tecnologías utilizamos?</div>
+
+                    
+                    <div className={"about_project__tabs_container__header__section" + (section == secciones[2] ? " section_active" : '')} onClick={() => { setSection(secciones[2]) }}>Seccion 3</div>
                 </header>
 
                 {
                     (() => {
-                        if (section == 'en_que_consiste') return <article className='about_project__tabs_container__section'>
+                        if (section == secciones[0]) return <article className='about_project__tabs_container__section'>
                             <div className='about_project__tabs_container__section_left'>
                                 <h3 className='section_title'>¿En que consiste el proyecto?</h3>
                                 <p className='section_description'>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
                                 </p>
                                 <h4 className='section_objetivos'>Objetivos:</h4>
-                                <p className='section_objetivos_item'><IoMdCut /> Coge el cuchillo para tallar la falla</p>
+                                <p className='section_objetivos_item'><IoMdCut /> Coger el cuchillo para tallar la falla</p>
                                 <p className='section_objetivos_item'><FaBrush /> Pintar la falla con el aerógrafo </p>
                                 <p className='section_objetivos_item'><IoBuildSharp /> Montar la falla en el ayuntamiento de Valencia</p>
                                 <p className='section_objetivos_item'><FaFire /> Quemar la falla!</p>
                                 <div className='separator'></div>
-                                <div className='button_next_section'>
+                                <div className='button_next_section' onClick={() => { setSection(secciones[1]) }}>
                                     <div className='button_next_section__text'>Más información</div>
                                     <div className='button_next_section__icon'>
                                         <FaArrowRightLong />
@@ -56,7 +61,7 @@ export function AboutProject() {
                             </div>
 
                         </article>
-                        if (section == 'tecnologias') return <article className='about_project__tabs_container__section'>
+                        if (section == secciones[1]) return <article className='about_project__tabs_container__section'>
                             <div className='about_project__tabs_container__section_left'>
                                 <h3 className='section_title'>¿Que tecnologías utilizamos?</h3>
                                 <p className='section_description'>
@@ -68,7 +73,7 @@ export function AboutProject() {
                                 <p className='section_objetivos_item'><IoBuildSharp /> Montar la falla en el ayuntamiento de Valencia</p>
                                 <p className='section_objetivos_item'><FaFire /> Quemar la falla!</p> */}
                                 <div className='separator'></div>
-                                <div className='button_next_section'>
+                                <div className='button_next_section' onClick={() => { setSection(secciones[2]) }}>
                                     <div className='button_next_section__text'>Más información</div>
                                     <div className='button_next_section__icon'>
                                         <FaArrowRightLong />
@@ -81,7 +86,7 @@ export function AboutProject() {
                                 <img src={unity_icon} alt="" />
                             </div>
                         </article>
-                        if (section == 'seccion3') return <article className='about_project__tabs_container__section'>
+                        if (section == secciones[2]) return <article className='about_project__tabs_container__section'>
                             <div className='about_project__tabs_container__section_left'>
                                 <h3 className='section_title'>Seccion 3</h3>
                                 <p className='section_description'>

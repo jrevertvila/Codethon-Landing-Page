@@ -1,12 +1,9 @@
 .header {
-    /* background-color: grey; */
     display: flex;
     width: 100%;
     height: 130px;
-    /* border-bottom: 1px solid black; */
     align-items: center;
     justify-content: space-between;
-    /* padding: 0px 80px; */
 }
 
 .header > span {
@@ -23,8 +20,20 @@
     align-items: center;
 }
 
-.nav span{
+.nav_item_container {
     font-size: 15px;
     text-transform: uppercase;
-    padding-left: 60px;
+    margin-left: 60px;
+    cursor: pointer;
+}
+
+.line {
+    border-bottom: 1px solid transparent;
+    width: 0px;
+    transition: 0.1s;
+}
+
+.nav_item_container:hover .line{
+    width: 100%;
+    border-bottom: 2px solid #1ad079;
 }
