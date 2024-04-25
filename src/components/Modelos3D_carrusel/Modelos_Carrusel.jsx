@@ -19,7 +19,7 @@ export default function Modelos3D_Carrusel() {
         modelo1: {
             title: "Falla Principal",
             subtitle: "Este modelo es el monumento principal de la falla",
-            modelo3d_filename: "Scene.jsx",
+            modelo3d_filename: "Scene",
             author: "Maria",
             src: google,
             alt: "Modelo 3D"
@@ -28,7 +28,7 @@ export default function Modelos3D_Carrusel() {
         modelo2: {
             title: "Falla Principal",
             subtitle: "Este modelo es el monumento principal de la falla",
-            modelo3d_filename: "Scene.jsx",
+            modelo3d_filename: "Scene",
             author: "Maria",
             src: nttdata,
             alt: "Modelo 3D"
@@ -37,7 +37,7 @@ export default function Modelos3D_Carrusel() {
         modelo3: {
             title: "Falla Principal",
             subtitle: "Este modelo es el monumento principal de la falla",
-            modelo3d_filename: "Scene.jsx",
+            modelo3d_filename: "Scene",
             author: "Maria",
             src: LogoArtemisPNG,
             alt: "Modelo 3D"
@@ -46,7 +46,7 @@ export default function Modelos3D_Carrusel() {
         modelo4: {
             title: "Falla Principal",
             subtitle: "Este modelo es el monumento principal de la falla",
-            modelo3d_filename: "Scene.jsx",
+            modelo3d_filename: "Scene",
             author: "Maria",
             src: edicom,
             alt: "Modelo 3D"
@@ -55,7 +55,7 @@ export default function Modelos3D_Carrusel() {
         modelo5: {
             title: "Falla Principal",
             subtitle: "Este modelo es el monumento principal de la falla",
-            modelo3d_filename: "Scene.jsx",
+            modelo3d_filename: "Scene",
             author: "Maria",
             src: google,
             alt: "Modelo 3D"
@@ -64,7 +64,7 @@ export default function Modelos3D_Carrusel() {
         modelo6: {
             title: "Falla Principal",
             subtitle: "Este modelo es el monumento principal de la falla",
-            modelo3d_filename: "Scene.jsx",
+            modelo3d_filename: "Scene",
             author: "Maria",
             src: edicom,
             alt: "Modelo 3D"
@@ -73,7 +73,7 @@ export default function Modelos3D_Carrusel() {
         modelo7: {
             title: "Falla Principal",
             subtitle: "Este modelo es el monumento principal de la falla",
-            modelo3d_filename: "Scene.jsx",
+            modelo3d_filename: "Scene",
             author: "Maria",
             src: google,
             alt: "Modelo 3D"
@@ -82,7 +82,7 @@ export default function Modelos3D_Carrusel() {
         modelo8: {
             title: "Falla Principal",
             subtitle: "Este modelo es el monumento principal de la falla",
-            modelo3d_filename: "Scene.jsx",
+            modelo3d_filename: "Scene",
             author: "Maria",
             src: edicom,
             alt: "Modelo 3D"
@@ -92,7 +92,7 @@ export default function Modelos3D_Carrusel() {
     return (
         <div className="app__wrapper modelos3d_content">
             <h1 className='modelos__title'>Modelos 3D</h1>
-
+            <span className='modelos__subtitle'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</span>
             <Carousel
                 swipeable="true"
                 emulateTouch="true"

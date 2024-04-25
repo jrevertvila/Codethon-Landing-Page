@@ -16,7 +16,17 @@
 
 .modelos__title  {
     margin: 30px 0px;
+    font-size: 55px;
     width: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.modelos__subtitle {
+    padding: 0 100px;
+    width: 100%;
+    margin: 20px 0;
+    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -25,8 +35,9 @@
     /* padding: 50px 100px 60px 90px; */
     margin: auto;
     margin-top: 40px;
+    margin-bottom: 80px;
     padding: 0 80px;
-    border-radius: 15px;
-    background-color: white;
-    box-shadow: 0px 0px 5px 0px rgb(206, 206, 206);
+    /* border-radius: 15px; */
+    /* background-color: white;
+    box-shadow: 0px 0px 5px 0px rgb(206, 206, 206); */
 }

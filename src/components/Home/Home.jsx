@@ -1,7 +1,7 @@
 import { Header } from '../Header/Header.jsx'
 import './Home.css'
 import Canvas3DHome from './Canvas3DHome.jsx'
-import vision_pro from '../../assets/images/vision_pro_png.png'
+// import vision_pro from '../../assets/images/vision_pro_png.png'
 import { useTranslation } from 'react-i18next';
 
 export function Home() {
@@ -12,7 +12,7 @@ export function Home() {
 
             <div className='home_content'>
                 <div className='home_content_modelo3d'>
-                    <Canvas3DHome modelo3d_filename={"Scene.jsx"}/>
+                    <Canvas3DHome modelo3d_filename={"Scene"}/>
                 </div>
                 <div className='home_content_text'>
                     <h1>{t('home__titulo_principal')}</h1>

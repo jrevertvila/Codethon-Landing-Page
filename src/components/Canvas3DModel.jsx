@@ -10,33 +10,23 @@ export default function Canvas3DModel({ modelo3d_filename }) {
 
     useEffect(() => {
         const importComponent = async () => {
-            const module = await import('../assets/3D-Model/' + modelo3d_filename);
+            const module = await import(`../assets/3D-Model/${modelo3d_filename}.jsx`);
             const AnotherComponent = module.default;
             setImportedComponent(<AnotherComponent />);
-            
+
         };
         importComponent();
         setIsLoading(true)
     }, []);
 
     return (
-        <>
-            {
-                (importedComponent != null ) ?
-                    <Canvas camera={{ fov: 18 }} style={{ background: "#f6f8fa", borderRadius: "40px", border: "1px solid #e7e7e7" }}>
-                        <ambientLight intensity={1.25} />
-                        <Suspense fallback={null}>
-                            {importedComponent}
-                        </Suspense>
-                        <OrbitControls />
-                        <Environment preset="sunset" />
-
-                    </Canvas> :
-                    <span>LOADING</span>
-            }
-
-
-        </>
-
+        <Canvas camera={{ fov: 18 }} style={{ background: "#f6f8fa", borderRadius: "40px", border: "1px solid #e7e7e7" }}>
+            <ambientLight intensity={1.25} />
+            <Suspense fallback={null}>
+                {importedComponent}
+            </Suspense>
+            <OrbitControls />
+            <Environment preset="sunset" />
+        </Canvas>
     )
 }

@@ -1,7 +1,7 @@
 import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Environment, OrbitControls } from "@react-three/drei";
-// import ModelIphone from "../assets/3D-Model/Scene";
+// import ModelIphone from "../../assets/3D-Model/Scene.jsx";
 
 export default function Canvas3DHome({ modelo3d_filename }) {
     // console.log(modelo3d_filename);
@@ -10,33 +10,24 @@ export default function Canvas3DHome({ modelo3d_filename }) {
 
     useEffect(() => {
         const importComponent = async () => {
-            const module = await import('../../assets/3D-Model/' + modelo3d_filename);
+            // const module = import.meta.glob
+            const module = await import(`../../assets/3D-Model/${modelo3d_filename}.jsx`);
             const AnotherComponent = module.default;
             setImportedComponent(<AnotherComponent />);
-            
+
         };
         importComponent();
         setIsLoading(true)
     }, []);
 
     return (
-        <>
-            {
-                (importedComponent != null ) ?
-                    <Canvas camera={{ fov: 18 }}>
-                        <ambientLight intensity={1.25}/>
-                        <Suspense fallback={null}>
-                            {importedComponent}
-                        </Suspense>
-                        <OrbitControls enableZoom={false}/>
-                        <Environment preset="sunset" />
-
-                    </Canvas> :
-                    <span>LOADING</span>
-            }
-
-
-        </>
-
+        <Canvas camera={{ fov: 18 }}>
+            <ambientLight intensity={1.25} />
+            <Suspense fallback={null}>
+                {importedComponent}
+            </Suspense>
+            <OrbitControls enableZoom={false} />
+            <Environment preset="sunset" />
+        </Canvas>
     )
 }
