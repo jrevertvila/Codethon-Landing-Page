@@ -90,7 +90,7 @@ export default function Modelos3D_Carrusel() {
         }
     }
     return (
-        <div className="app__wrapper">
+        <div className="app__wrapper modelos3d_content">
             <h1 className='modelos__title'>Modelos 3D</h1>
 
             <Carousel

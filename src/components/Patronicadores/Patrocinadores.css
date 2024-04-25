@@ -1,16 +1,19 @@
 .app__wrapper__patrocinadores{
-    background-color: #E8DFCA;
+    /* background-color: #E8DFCA; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 0 180px;
-    border-bottom: 1px solid rgb(208, 209, 167);
+    padding: 0 80px;
+    margin: 40px 0px;
+    /* border-bottom: 1px solid rgb(208, 209, 167); */
 }
 
 .app__wrapper__patrocinadores img{
-    margin: 25px 20px;
+    
+    /* margin: 25px 20px; */
     width: 160px;
     filter: drop-shadow(0 0 10px rgba(70, 70, 70, 0.068));
-
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }

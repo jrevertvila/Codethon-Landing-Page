@@ -20,8 +20,8 @@ function App() {
   return (
     <>
       <Home />
-      <AboutProject />
       <Patrocinadores />
+      <AboutProject />
       {/* <Modelos3D /> */}
       <Modelos3D_Carrusel />
       <ViveExperiencia />
