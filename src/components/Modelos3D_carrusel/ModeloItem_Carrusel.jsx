@@ -9,6 +9,7 @@ export default function ModeloItemCarousel({ src, alt, title, subtitle, modelo3d
     const openModal = () => {
         console.log("opesssn");
         setModalOpen(true);
+        console.log(modalOpen);
     };
 
     const closeModal = () => {

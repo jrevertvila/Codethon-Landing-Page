@@ -1,12 +1,17 @@
+import { useEffect } from 'react';
 import Canvas3DModel from '../../Canvas3DModel';
 import './Modal.css'
 
 export default function Modal({ isOpen, onClose, title, subtitle, author, modelo3d_filename, children }) {
-    console.log(isOpen);
-    if (!isOpen) return null;
+    // console.log(isOpen);
+    // if (!isOpen) return null;
+    useEffect(()=>{
+
+        document.querySelector(".app__wrapper__patrocinadores").appendChild(document.getElementById('modal-'+title.replace(/\s/g, "")))
+    },[isOpen])
 
     return (
-        <div className="modal-overlay" onClick={onClose}>
+        <div className="modal-overlay" onClick={onClose} id={'modal-'+title.replace(/\s/g, "")} style={{display: isOpen ? 'flex' : 'none'}}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                 <header className="modal-header">
                     <button className="close-button" onClick={onClose}>

@@ -120,11 +120,9 @@ export default function Modelos3D_Carrusel() {
                                                 if (contador == 4) break;
                                                 contador++
                                                 const modelo_item = modelos[keys[x]];
-                                                console.log(modelo_item);
                                                 content_items.push(
                                                     <ModeloItemCarousel key={"item"+contador} alt={modelo_item['alt']} src={modelo_item['src']} title={modelo_item['title'] + x} subtitle={modelo_item['subtitle']} modelo3d_filename={modelo_item['modelo3d_filename']} author={modelo_item['author']} />
                                                 )
-                                                console.log(content_items);
                                                 cont_object++
                                             }
                                             return content_items

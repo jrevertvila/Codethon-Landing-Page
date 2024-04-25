@@ -22,7 +22,7 @@ function App() {
       <Home />
       <AboutProject />
       <Patrocinadores />
-      <Modelos3D />
+      {/* <Modelos3D /> */}
       <Modelos3D_Carrusel />
       <ViveExperiencia />
       <AboutUs />

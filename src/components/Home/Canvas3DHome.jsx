@@ -24,11 +24,11 @@ export default function Canvas3DHome({ modelo3d_filename }) {
             {
                 (importedComponent != null ) ?
                     <Canvas camera={{ fov: 18 }}>
-                        <ambientLight intensity={1.25} />
+                        <ambientLight intensity={1.25}/>
                         <Suspense fallback={null}>
                             {importedComponent}
                         </Suspense>
-                        <OrbitControls />
+                        <OrbitControls enableZoom={false}/>
                         <Environment preset="sunset" />
 
                     </Canvas> :
