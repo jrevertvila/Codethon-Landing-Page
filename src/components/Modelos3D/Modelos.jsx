@@ -21,7 +21,7 @@ export default function Modelos3D() {
 
     return (
         <section className="app__wrapper modelos_section">
-            <h2 className='modelos_section_titulo'>Modelos 3D</h2>
+            <h2 className='modelos_section_titulo'>{t('modelos3d__titulo')}</h2>
 
             <div className='modelos_container'>
                 <ModeloItem alt={"Modelo3d"} src={LogoArtemisPNG} title={"Falla Principal"} subtitle={"Este modelo es el monumento principal de la falla"} modelo3d_filename={"Scene"} author={"Maria"}/>

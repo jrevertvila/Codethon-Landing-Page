@@ -8,8 +8,12 @@ import nttdata from "../../assets/images/nttdata.png"
 import edicom from "../../assets/images/edicom.png"
 import ModeloItemCarousel from './ModeloItem_Carrusel';
 import LogoArtemisPNG from '../../assets/ModelosPNG/LogoArtemisModelo3d.png'
+import { useTranslation } from 'react-i18next';
+
 
 export default function Modelos3D_Carrusel() {
+    const { t } = useTranslation();
+
 
     function vhToPixels(vh) {
         return Math.round(window.innerHeight / (100 / vh)) + 'px';
@@ -91,8 +95,8 @@ export default function Modelos3D_Carrusel() {
     }
     return (
         <div className="app__wrapper modelos3d_content">
-            <h1 className='modelos__title'>Modelos 3D</h1>
-            <span className='modelos__subtitle'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</span>
+            <h1 className='modelos__title'>{t('modelos3d__titulo')}</h1>
+            <span className='modelos__subtitle'>{t('modelos3d__descripcion')}</span>
             <Carousel
                 swipeable="true"
                 emulateTouch="true"
