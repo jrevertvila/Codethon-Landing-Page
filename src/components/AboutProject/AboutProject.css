@@ -112,14 +112,22 @@ body {
 
 .about_project__tabs_container__section_right {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 50%;
     height: 100%;
+    padding: 20px;
 }
 
 .about_project__tabs_container__section_right img {
     width: 50%;
+    max-width: 200px;
+    margin: 20px;
+}
+
+.chsarp_img {
+    width: 100px !important;
 }
 
 .separator {

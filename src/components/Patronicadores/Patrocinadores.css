@@ -13,6 +13,7 @@
     
     /* margin: 25px 20px; */
     width: 160px;
+    margin: 0px 10px;
     filter: drop-shadow(0 0 10px rgba(70, 70, 70, 0.068));
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);

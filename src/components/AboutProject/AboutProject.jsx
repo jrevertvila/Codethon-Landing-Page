@@ -1,6 +1,10 @@
 import './AboutProject.css'
 // import unityIMG from '../../assets/images/unity_programa.png'
 import unity_icon from '../../assets/images/unity_icon.png'
+import maya from '../../assets/images/maya.png'
+import Meta_Quest from '../../assets/images/Meta_Quest.png'
+import react from '../../assets/images/react.png'
+import csharp from '../../assets/images/csharp.png'
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 import { IoBuildSharp } from "react-icons/io5";
@@ -83,7 +87,10 @@ export function AboutProject() {
                             </div>
 
                             <div className='about_project__tabs_container__section_right'>
-                                <img src={unity_icon} alt="" />
+                                <img src={maya} alt="maya" />
+                                <img src={react} alt="react" />
+                                <img src={csharp} className="chsarp_img" alt="csharp" />
+                                <img src={Meta_Quest} alt="Meta_Quest" />
                             </div>
                         </article>
                         if (section == secciones[2]) return <article className='about_project__tabs_container__section'>
