@@ -1,0 +1,106 @@
+.modelos_page_container {
+    display: flex;
+    align-items: center;
+}
+
+.modelos__page_title {
+    font-size: 56px;
+}
+
+.carousel {
+    width: 100%;
+    max-width: 1300px;
+    /* Width of carousel */
+    height: 166px;
+    /* Height of carousel */
+}
+
+.card_mod-container {
+    width: 100%;
+    /* Width of card container */
+    display: flex;
+    /* Set inline elements */
+    overflow-x: auto;
+    /* Set overflow in horizontal scroll */
+    overflow-y: hidden;
+    /* Hidden overflow in vertical scroll */
+    scroll-snap-type: x mandatory;
+    /* Force the scroll to snap to the start of a scroll-snap area */
+    gap: 8px;
+    /* Set gap between cards */
+    width: calc(100% - 16px);
+    margin: 8px;
+    flex: 0 0 calc(100% - 16px);
+    /* Set width of card container */
+}
+
+.card_mod-container::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar in Chrome, Safari and Opera */
+}
+
+.card_mod {
+    min-width: 100%;
+    /* min-width: 250px; */
+    /* Set min width of card */
+    /* height: 150px; */
+    /* Set height of card */
+    scroll-snap-align: start;
+    /* Set the element focus position in scroll container */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* background: #17BF60;
+    border: 1px solid #4F5873;
+    color: #4a544c;
+    border-radius: 8px; */
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 20px;
+    padding: 5px;
+}
+
+.card:hover {
+    background: #1ED96F;
+    /* Set background color when hover */
+}
+
+.item_container {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    /* border: 1px solid black; */
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 0px rgb(206, 206, 206);
+    background-color: white;
+    cursor: pointer;
+    transition: 0.1s;
+    display: flex;
+    flex-direction: column;
+}
+
+.item_container:hover {
+    box-shadow: 0px 0px 5px 0px rgb(146, 143, 143);
+    
+}
+
+.item_container .item_container__img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item_container .item_container__img img {
+    width: 35%;
+}
+
+.item_container .card_mod__title {
+    height: 20%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}

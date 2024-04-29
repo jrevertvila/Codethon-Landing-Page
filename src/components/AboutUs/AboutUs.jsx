@@ -26,12 +26,12 @@ export function AboutUs() {
             <h2 className='aboutUs_title'>{t('sobre_nosotros__titulo')}</h2>
             <p className='aboutUs_subtitle'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             <div className='container'>
-                <div onClick={() => changeCardActive("1")} class={"card" + (cardActive == "1" ? ' active' : '')} >
-                    <img class="background" src={img01} alt="" />
+                <div onClick={() => changeCardActive("1")} className={"card" + (cardActive == "1" ? ' active' : '')} >
+                    <img className="background" src={img01} alt="" />
 
-                    <div class="card-content" >
-                        <div class="profile-image">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gamepad-2">
+                    <div className="card-content" >
+                        <div className="profile-image">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-gamepad-2">
                                 <line x1="6" x2="10" y1="11" y2="11" />
                                 <line x1="8" x2="8" y1="9" y2="13" />
                                 <line x1="15" x2="15.01" y1="12" y2="12" />
@@ -40,17 +40,17 @@ export function AboutUs() {
                             </svg>
                         </div>
 
-                        <h3 class="title">GTA 6</h3>
+                        <h3 className="title">GTA 6</h3>
                     </div>
-                    <div class="backdrop"></div>
+                    <div className="backdrop"></div>
                 </div>
 
-                <div onClick={() => changeCardActive("2")} class={"card" + (cardActive == "2" ? ' active' : '')}>
-                    <img class="background" src={img02} alt="" />
+                <div onClick={() => changeCardActive("2")} className={"card" + (cardActive == "2" ? ' active' : '')}>
+                    <img className="background" src={img02} alt="" />
 
-                    <div class="card-content">
-                        <div class="profile-image">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gamepad-2">
+                    <div className="card-content">
+                        <div className="profile-image">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-gamepad-2">
                                 <line x1="6" x2="10" y1="11" y2="11" />
                                 <line x1="8" x2="8" y1="9" y2="13" />
                                 <line x1="15" x2="15.01" y1="12" y2="12" />
@@ -59,17 +59,17 @@ export function AboutUs() {
                             </svg>
                         </div>
 
-                        <h3 class="title">Spider-Man PS5</h3>
+                        <h3 className="title">Spider-Man PS5</h3>
                     </div>
-                    <div class="backdrop"></div>
+                    <div className="backdrop"></div>
                 </div>
 
-                <div onClick={() => changeCardActive("3")} class={"card" + (cardActive == "3" ? ' active' : '')}>
-                    <img class="background" src={img03} alt="" />
+                <div onClick={() => changeCardActive("3")} className={"card" + (cardActive == "3" ? ' active' : '')}>
+                    <img className="background" src={img03} alt="" />
 
-                    <div class="card-content">
-                        <div class="profile-image">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gamepad-2">
+                    <div className="card-content">
+                        <div className="profile-image">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-gamepad-2">
                                 <line x1="6" x2="10" y1="11" y2="11" />
                                 <line x1="8" x2="8" y1="9" y2="13" />
                                 <line x1="15" x2="15.01" y1="12" y2="12" />
@@ -78,17 +78,17 @@ export function AboutUs() {
                             </svg>
                         </div>
 
-                        <h3 class="title">God Of War</h3>
+                        <h3 className="title">God Of War</h3>
                     </div>
-                    <div class="backdrop"></div>
+                    <div className="backdrop"></div>
                 </div>
 
-                <div onClick={() => changeCardActive("4")} class={"card" + (cardActive == "4" ? ' active' : '')}>
-                    <img class="background" src={img04} alt="" />
+                <div onClick={() => changeCardActive("4")} className={"card" + (cardActive == "4" ? ' active' : '')}>
+                    <img className="background" src={img04} alt="" />
 
-                    <div class="card-content">
-                        <div class="profile-image">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gamepad-2">
+                    <div className="card-content">
+                        <div className="profile-image">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-gamepad-2">
                                 <line x1="6" x2="10" y1="11" y2="11" />
                                 <line x1="8" x2="8" y1="9" y2="13" />
                                 <line x1="15" x2="15.01" y1="12" y2="12" />
@@ -97,17 +97,17 @@ export function AboutUs() {
                             </svg>
                         </div>
 
-                        <h3 class="title">The Last of Us</h3>
+                        <h3 className="title">The Last of Us</h3>
                     </div>
-                    <div class="backdrop"></div>
+                    <div className="backdrop"></div>
                 </div>
 
-                <div onClick={() => changeCardActive("5")} class={"card" + (cardActive == "5" ? ' active' : '')}>
-                    <img class="background" src={img05} alt="" />
+                <div onClick={() => changeCardActive("5")} className={"card" + (cardActive == "5" ? ' active' : '')}>
+                    <img className="background" src={img05} alt="" />
 
-                    <div class="card-content">
-                        <div class="profile-image">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gamepad-2">
+                    <div className="card-content">
+                        <div className="profile-image">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-gamepad-2">
                                 <line x1="6" x2="10" y1="11" y2="11" />
                                 <line x1="8" x2="8" y1="9" y2="13" />
                                 <line x1="15" x2="15.01" y1="12" y2="12" />
@@ -116,17 +116,17 @@ export function AboutUs() {
                             </svg>
                         </div>
 
-                        <h3 class="title">Elden Ring</h3>
+                        <h3 className="title">Elden Ring</h3>
                     </div>
-                    <div class="backdrop"></div>
+                    <div className="backdrop"></div>
                 </div>
 
-                <div onClick={() => changeCardActive("6")} class={"card" + (cardActive == "6" ? ' active' : '')}>
-                    <img class="background" src={avatar} alt="" />
+                <div onClick={() => changeCardActive("6")} className={"card" + (cardActive == "6" ? ' active' : '')}>
+                    <img className="background" src={avatar} alt="" />
 
-                    <div class="card-content">
-                        <div class="profile-image">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gamepad-2">
+                    <div className="card-content">
+                        <div className="profile-image">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-gamepad-2">
                                 <line x1="6" x2="10" y1="11" y2="11" />
                                 <line x1="8" x2="8" y1="9" y2="13" />
                                 <line x1="15" x2="15.01" y1="12" y2="12" />
@@ -135,9 +135,9 @@ export function AboutUs() {
                             </svg>
                         </div>
 
-                        <h3 class="title">Elden Ring</h3>
+                        <h3 className="title">Elden Ring</h3>
                     </div>
-                    <div class="backdrop"></div>
+                    <div className="backdrop"></div>
                 </div>
             </div>
 

@@ -18,7 +18,7 @@ export default function Canvas3DHome({ modelo3d_filename }) {
     // console.log(modelo3d_filename);
     const [importedComponent, setImportedComponent] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
-    console.log(isLoading);
+    // console.log(isLoading);
     useEffect(() => {
         const importComponent = async () => {
             // const module = import.meta.glob
@@ -29,7 +29,7 @@ export default function Canvas3DHome({ modelo3d_filename }) {
         };
         importComponent();
         setIsLoading(true)
-        console.log(isLoading);
+        // console.log(isLoading);
 }, []);
 
     return (
