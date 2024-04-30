@@ -9,6 +9,7 @@ import { AboutProject } from './components/AboutProject/AboutProject.jsx'
 import { Patrocinadores } from './components/Patronicadores/Patrocinadores.jsx'
 import { useTranslation } from 'react-i18next'
 import { useEffect, useState } from 'react'
+import { Header } from './components/Header/Header.jsx'
 
 function App() {
   const { t, i18n } = useTranslation()
@@ -20,14 +21,15 @@ function App() {
   }, [lang]);
   return (
     <>
-      <Home />
-      <Patrocinadores />
-      <AboutProject />
+      <Header />
+      {/* <Home /> */}
+      {/* <Patrocinadores /> */}
+      {/* <AboutProject /> */}
       {/* <Modelos3D /> */}
       {/* <Modelos3D_Carrusel /> */}
-      <Modelos3d_2/>
-      <ViveExperiencia />
-      <AboutUs />
+      {/* <Modelos3d_2/> */}
+      {/* <ViveExperiencia /> */}
+      {/* <AboutUs /> */}
     </>
   )
 }

@@ -8,8 +8,6 @@ export function Home() {
     const { t } = useTranslation();
     return (
         <section className="app__wrapper home">
-            <Header />
-
             <div className='home_content'>
                 <div className='home_content_modelo3d'>
                     <Canvas3DHome modelo3d_filename={"Scene"}/>
