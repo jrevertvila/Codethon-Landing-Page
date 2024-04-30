@@ -14,6 +14,7 @@ export function Home() {
                 </div>
                 <div className='home_content_text'>
                     <h1>{t('home__titulo_principal')}</h1>
+                    <p>{t('home__titulo_principal_inmersio')}</p>
                     <span>{t('home__subtitulo')}</span>
                     <button>{t('home__boton')}</button>
                 </div>

@@ -33,7 +33,7 @@ export default function Canvas3DHome({ modelo3d_filename }) {
 }, []);
 
     return (
-        <Canvas camera={{ fov: 18 }}>
+        <Canvas camera={{ fov: 14 }}>
             <ambientLight intensity={1.25} />
             <Suspense fallback={<Loader />}>
                 {importedComponent}

@@ -22,7 +22,7 @@ function App() {
   return (
     <>
       <Header />
-      {/* <Home /> */}
+      <Home />
       {/* <Patrocinadores /> */}
       {/* <AboutProject /> */}
       {/* <Modelos3D /> */}
