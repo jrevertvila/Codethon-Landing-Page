@@ -28,7 +28,7 @@ function App() {
 
       <Modelos3d_2/>
       {/* <ViveExperiencia /> */}
-      {/* <AboutUs /> */}
+      <AboutUs />
     </>
   )
 }
