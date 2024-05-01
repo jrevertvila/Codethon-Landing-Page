@@ -19,22 +19,22 @@ export function Header() {
 
         if (y > window.scrollY) {
             // console.log(cont);
-            console.log(scrollDirection);
+            // console.log(scrollDirection);
             if (scrollDirection == "down") {
-                console.log("SCROOOOOOOOOLLLL");
+                // console.log("SCROOOOOOOOOLLLL");
                 setCont(0)
-                console.log("CONT", cont);
+                // console.log("CONT", cont);
                 setCont(cont+1)
             } else {
                 setCont(cont+1)
             }
-            console.log(cont);
+            // console.log(cont);
             
             setScrollDirection("up");
             if (cont > 30) setIsScrollingUp(true);
         } else if (y < window.scrollY) {
             if (scrollDirection == "up") {
-                console.log("SCROOOOOOOOOLLLL");
+                // console.log("SCROOOOOOOOOLLLL");
                 setCont(0)
             }
             setCont(cont+1)

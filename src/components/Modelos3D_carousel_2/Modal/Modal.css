@@ -1,5 +1,5 @@
 .modal-overlay {
-  z-index: 10;
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
@@ -69,4 +69,11 @@
 .modal-footer .modal-autor {
   
   font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .modal-main {
+    width: 80vw;
+
+  }
 }

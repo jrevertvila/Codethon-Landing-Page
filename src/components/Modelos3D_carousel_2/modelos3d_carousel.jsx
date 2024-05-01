@@ -5,9 +5,12 @@ import Modelo3d_item from './Modelo3d_item';
 import { useEffect, useRef, useState } from 'react';
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import { FaRegArrowAltCircleLeft } from "react-icons/fa";
-
+import useWindowDimensions from '../../hooks/useWindowDimensions';
 
 export default function Modelos3d_2() {
+    const { height, width } = useWindowDimensions();
+
+
     const modelos3d_json = {
         modelo1: {
             title: "Falla Principal",
@@ -154,9 +157,13 @@ export default function Modelos3d_2() {
             author: "Maria",
         },
     }
+    let setItemsPage = 6
 
+    if (width <= 1000) setItemsPage = 4
+    if (width <= 600) setItemsPage = 2
+    console.log(setItemsPage);
     let keys = Object.keys(modelos3d_json)
-    let pages = Math.ceil(Object.keys(modelos3d_json).length / 6)
+    let pages = Math.ceil(Object.keys(modelos3d_json).length / setItemsPage)
     let cont_object = 0
 
     const [active, setActive] = useState(false)
@@ -175,14 +182,10 @@ export default function Modelos3d_2() {
 
     useEffect(() => {
         carouselRef.current.scrollLeft = move_;
+        console.log(move_);
         setMaxScroll(Math.ceil(carouselRef.current.scrollWidth - carouselRef.current.clientWidth))
         setMaxScrollPaged(Math.ceil(maxScroll / pages))
-        console.log("carouselRef.current.scrollWidth", carouselRef.current.scrollWidth);
-        console.log("carouselRef.current.clientWidth", carouselRef.current.clientWidth);
-        console.log(maxScroll);
-        console.log(maxScrollPaged);
-        console.log(move_);
-   
+
     }, []);
 
     let mousedown = (e) => {
@@ -191,10 +194,6 @@ export default function Modelos3d_2() {
         setStartX(e.pageX - carouselRef.current.offsetLeft)
         setScrollLeft(carouselRef.current.scrollLeft)
     }
-
-    // useEffect(() => {
-    //     carouselRef.current.scrollLeft = move_;
-    // }, [move_]);
 
     let mousemove = (e) => {
         if (!down) return;
@@ -218,20 +217,37 @@ export default function Modelos3d_2() {
     let setMoveFn = (m) => {
         console.log("move_", move_);
         console.log("maxScrollPaged", maxScrollPaged);
-        console.log("m antes",m);
+        console.log("m antes", m);
         if (m < 0) m = 0
         if (m > maxScroll) m = maxScroll
-        console.log("m despues",m);
+        console.log("m despues", m);
         setMove_(m)
     }
+
+    console.log(move_);
 
     return (
         <div className='app__wrapper modelos_page_container'>
             <h2 className='modelos__page_title'>Modelos 3D</h2>
             <div className="carousel">
-                <div className='anterior' onClick={() => setMoveFn(move_ - (maxScrollPaged))}>
+                {/* <div className='anterior' onClick={() => setMoveFn(move_ - (maxScrollPaged))}>
                     <FaRegArrowAltCircleLeft />
-                </div>
+                </div> */}
+                {
+                    (() => {
+                        if (width <= 600)
+                            // return <div className='siguiente' onClick={() => setMoveFn(move_ + maxScrollPaged)}>
+                            //         <FaRegArrowAltCircleRight />
+                            //     </div>
+                            console.log(keys.length / pages);
+                        // return (
+                        //     <div className='custom_progress_bar'>
+                        //         <div className='custom_progres_bar_progress'  style={{width: Math.ceil(300 / pages)+"px" }} ></div>
+                        //     </div>
+                        // )
+
+                    })()
+                }
                 <div id='card_mod-container' ref={carouselRef} className={"card_mod-container" + (active ? ' active_drag' : '')} onMouseDown={(e) => mousedown(e)} onMouseLeave={() => mouseleave()} onMouseMove={(e) => mousemove(e)} onMouseUp={() => mouseup()}>
                     {(() => {
                         let content = []
@@ -243,7 +259,7 @@ export default function Modelos3d_2() {
                                         let contador = 0
                                         for (let x = cont_object; x < keys.length; x++) {
 
-                                            if (contador == 6) break;
+                                            if (contador == setItemsPage) break;
                                             contador++
                                             const modelo_item = modelos3d_json[keys[x]];
                                             content_items.push(
@@ -260,9 +276,19 @@ export default function Modelos3d_2() {
                     })()}
 
                 </div>
-                <div className='siguiente' onClick={() => setMoveFn(move_ + maxScrollPaged)}>
-                    <FaRegArrowAltCircleRight />
-                </div>
+                {
+                    (() => {
+                        // if (width < 600)
+                        // console.log("move",move_);
+                        //     return (
+                        //         <div className='custom_progress_bar'>
+                        //             <div className='custom_progres_bar_progress' style={{ width: Math.ceil(300 / pages) + "px", marginLeft: move_+"px" }} ></div>
+                        //         </div>
+                        //     )
+
+
+                    })()
+                }
             </div>
 
         </div>

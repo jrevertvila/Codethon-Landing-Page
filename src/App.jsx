@@ -26,7 +26,7 @@ function App() {
       <Patrocinadores />
       <AboutProject />
 
-      {/* <Modelos3d_2/> */}
+      <Modelos3d_2/>
       {/* <ViveExperiencia /> */}
       {/* <AboutUs /> */}
     </>
