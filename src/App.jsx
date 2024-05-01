@@ -29,7 +29,7 @@ function App() {
       {/* <Modelos3D_Carrusel /> */}
       <Modelos3d_2/>
       <ViveExperiencia />
-      <AboutUs />
+      {/* <AboutUs /> */}
     </>
   )
 }
