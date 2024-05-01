@@ -52,6 +52,9 @@ body {
     align-items: center;
     box-shadow: 0px 0px 5px 0px rgb(206, 206, 206);
     cursor: pointer;
+
+    padding: 0px 10px;
+    text-align: center;
 }
 
 .about_project__tabs_container__header__section:hover {
@@ -145,6 +148,7 @@ body {
     align-items: center;
     width: 210px;
     /* justify-content: ; */
+    margin-top: 20px;
 }
 
 .button_next_section:hover {
@@ -168,4 +172,27 @@ body {
     justify-content: center;
     align-items: center;
     padding-right: 5px;
+}
+
+@media (max-width: 900px) {
+    .about_project__tabs_container__section_right {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .about_project {
+        padding: 20px;
+    }
+
+    .about_project__tabs_container__header__section {
+        line-height: 20px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .about_project__title {
+        font-size: 32px;
+    }
 }

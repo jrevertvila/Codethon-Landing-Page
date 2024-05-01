@@ -94,6 +94,12 @@
 
     }
 
+    .isScrollingDown {
+        overflow: hidden;
+        height: 0px !important;
+        padding: 0 !important;
+    }
+
 
     .logo_container {
         width: 100%;

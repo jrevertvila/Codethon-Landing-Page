@@ -25,10 +25,9 @@ function App() {
       <Home />
       <Patrocinadores />
       <AboutProject />
-      {/* <Modelos3D /> */}
-      {/* <Modelos3D_Carrusel /> */}
-      <Modelos3d_2/>
-      <ViveExperiencia />
+
+      {/* <Modelos3d_2/> */}
+      {/* <ViveExperiencia /> */}
       {/* <AboutUs /> */}
     </>
   )
