@@ -23,13 +23,13 @@ function App() {
     <>
       <Header />
       <Home />
-      {/* <Patrocinadores /> */}
-      {/* <AboutProject /> */}
+      <Patrocinadores />
+      <AboutProject />
       {/* <Modelos3D /> */}
       {/* <Modelos3D_Carrusel /> */}
-      {/* <Modelos3d_2/> */}
-      {/* <ViveExperiencia /> */}
-      {/* <AboutUs /> */}
+      <Modelos3d_2/>
+      <ViveExperiencia />
+      <AboutUs />
     </>
   )
 }

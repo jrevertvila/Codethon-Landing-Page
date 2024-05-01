@@ -14,7 +14,7 @@ function Loader() {
 }
 
 
-export default function Canvas3DHome({ modelo3d_filename }) {
+export default function Canvas3DHome({ modelo3d_filename, fov }) {
     // console.log(modelo3d_filename);
     const [importedComponent, setImportedComponent] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
@@ -30,10 +30,9 @@ export default function Canvas3DHome({ modelo3d_filename }) {
         importComponent();
         setIsLoading(true)
         // console.log(isLoading);
-}, []);
-
+    }, []);
     return (
-        <Canvas camera={{ fov: 14 }}>
+        <Canvas camera={{ fov: fov }}>
             <ambientLight intensity={1.25} />
             <Suspense fallback={<Loader />}>
                 {importedComponent}

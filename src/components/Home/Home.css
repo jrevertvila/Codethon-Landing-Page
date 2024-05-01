@@ -5,13 +5,23 @@
 .home_content {
     flex: 1;
     display: flex;
+    /* justify-content: center; */
     width: 100%;
     min-height: 100%;
     /* background-color: aquamarine; */
 }
 
+@media (max-width: 1320px) {
+    .home_content {
+        gap: 40px;
+    }
+}
+
 .home_content_modelo3d {
     flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-top: -200px;
     /* padding-right: 500px; */
     /* background-color: brown; */
     /* width: 300px; */
@@ -30,22 +40,27 @@
 .home_content_text h1 {
     font-weight: 700;
     font-size: 72px;
-    line-height: 90px;
-}
-
-.home_content_text h1 span {
-    font-weight: 700;
-    font-size: 72px;
-    line-height: 90px;
+    line-height: 80px;
 }
 
 .home_content_text p {
-    /* font-weight: 700; */
-    font-size: 24px;
+    font-weight: 700;
+    font-size: 56px;
+    align-self: flex-start;
     /* line-height: 90px; */
+}
+
+.home_content_text span {
+    font-size: 24px;
+    line-height: 80px;
+    align-self: flex-start;
+}
+
+/* .home_content_text p {
+    font-size: 24px;
     align-self: flex-start;
     margin: 40px 0;
-}
+} */
 
 .home_content_text button {
     background: none;
@@ -55,13 +70,13 @@
 
 
 
-    border: 1px solid #63999498;
+    border: 1px solid #ffffff;
     border-radius: 400px;
     padding: 20px 40px;
-    color: white;
-    background-color: #54b4ab;
+    color: rgb(255, 255, 255);
+    background-color: #ECCA9C;
     /* font-weight: 700; */
-    margin-top: 35px;
+    margin-top: 25px;
     font-size: 20px;
     /* line-height: 90px; */
     align-self: flex-start;
@@ -69,7 +84,7 @@
 }
 
 .home_content_text button:hover {
-    background-color: #36b6a9;
+    background-color: #ECCA9C;
 
     box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.726);
 }
@@ -99,6 +114,7 @@
     }
 
     .home_content_modelo3d {
+        margin-top: unset;
         flex: unset;
         width: 300px;
         height: 400px;
@@ -116,15 +132,18 @@
     }
 
     .home_content_text p {
-        margin: 10px 0px 30px 0px;
+        /* margin: 10px 0px 20px 0px; */
         width: 100%;
         font-weight: 700;
-        font-size: 22px;
-        line-height: 36px;
+        font-size: 28px;
+        line-height: 50px;
         text-align: center;
     }
 
     .home_content_text > span {
+        align-self: center;
+        margin-top: 20px;
+        line-height: 32px;
         font-size: 18px;
         text-align: center;
     }
