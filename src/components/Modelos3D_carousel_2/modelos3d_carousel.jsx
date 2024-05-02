@@ -161,7 +161,7 @@ export default function Modelos3d_2() {
 
     if (width <= 1000) setItemsPage = 4
     if (width <= 600) setItemsPage = 2
-    console.log(setItemsPage);
+    // console.log(setItemsPage);
     let keys = Object.keys(modelos3d_json)
     let pages = Math.ceil(Object.keys(modelos3d_json).length / setItemsPage)
     let cont_object = 0
@@ -182,7 +182,7 @@ export default function Modelos3d_2() {
 
     useEffect(() => {
         carouselRef.current.scrollLeft = move_;
-        console.log(move_);
+        // console.log(move_);
         setMaxScroll(Math.ceil(carouselRef.current.scrollWidth - carouselRef.current.clientWidth))
         setMaxScrollPaged(Math.ceil(maxScroll / pages))
 
@@ -224,7 +224,7 @@ export default function Modelos3d_2() {
         setMove_(m)
     }
 
-    console.log(move_);
+    // console.log(move_);
 
     return (
         <div className='app__wrapper modelos_page_container'>

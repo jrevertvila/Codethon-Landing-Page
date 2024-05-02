@@ -10,6 +10,7 @@ import { Patrocinadores } from './components/Patronicadores/Patrocinadores.jsx'
 import { useTranslation } from 'react-i18next'
 import { useEffect, useState } from 'react'
 import { Header } from './components/Header/Header.jsx'
+import Footer from './components/Footer/Footer.jsx'
 
 function App() {
   const { t, i18n } = useTranslation()
@@ -29,6 +30,7 @@ function App() {
       <Modelos3d_2/>
       {/* <ViveExperiencia /> */}
       <AboutUs />
+      <Footer />
     </>
   )
 }

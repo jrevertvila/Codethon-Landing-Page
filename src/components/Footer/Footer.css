@@ -1,0 +1,51 @@
+.app__footer {
+    /* border-top: 1px solid rgb(228, 228, 228); */
+    box-shadow: 0px 0px 5px 0px rgb(219, 219, 219);
+    /* background-color: aqua; */
+    height: 130px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+    color: rgb(69, 69, 69);
+}
+
+/* .app__footer img {
+    width: 200px;
+} */
+
+.app__footer img{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.footer_upv_logo {
+    width: 150px;
+}
+
+.footer_artemis_logo {
+    width: 130px;
+
+}
+
+@media (max-width: 800px) {
+    .app__footer {
+        padding: 0px 10px;
+        height: 80px;
+    }
+
+    .footer_upv_logo {
+        width: 90px;
+    }
+    
+    .footer_artemis_logo {
+        width: 80px;
+    
+    }
+
+    .app__footer span {
+        font-size: 10px;
+        letter-spacing: -0.5px;
+    }
+}
