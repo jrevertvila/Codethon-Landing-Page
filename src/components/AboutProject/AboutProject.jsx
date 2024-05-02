@@ -16,6 +16,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { BsUnity } from "react-icons/bs";
 import { SiCsharp } from "react-icons/si";
 import { SiAutodeskmaya } from "react-icons/si";
+import LogoPrueba from '../../assets/images/Memòries en Cendra.png'
 
 
 
@@ -67,7 +68,7 @@ export function AboutProject() {
                             </div>
 
                             <div className='about_project__tabs_container__section_right'>
-                                <img src={unity_icon} alt="" />
+                                <img src={LogoPrueba} alt="" className='section_objetivos'/>
                             </div>
 
                         </article>
@@ -78,9 +79,6 @@ export function AboutProject() {
                                     {t('sobre_proyecto__seccion2_descripcion')}
 
                                 </p>
-                                {/* <p className="section_description">
-                                    {t('sobre_proyecto__seccion2_descripcion2')}
-                                </p> */}
                                 <h4 className='section_objetivos'>Tecnologias:</h4>
                                 <p className='section_objetivos_item'><BsUnity/><strong>{t('sobre_proyecto__seccion2_tecnologia1_nombre')}</strong>{t('sobre_proyecto__seccion2_tecnologia1')}</p>
                                 <p className='section_objetivos_item'><SiCsharp/><strong>{t('sobre_proyecto__seccion2_tecnologia2_nombre')}</strong>{t('sobre_proyecto__seccion2_tecnologia2')}</p>
