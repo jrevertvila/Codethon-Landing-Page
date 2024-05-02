@@ -13,18 +13,33 @@
     margin-bottom: 40px;
 }
 
+.aboutUs_section_title {
+    /* align-self: flex-start; */
+    font-size: 24px;
+    margin: 15px 0;
+    text-align: center;
+}
+
 .aboutUs_container {
     width: 100%;
     /* background-color: rgba(0, 255, 255, 0.151); */
     flex: 1;
 
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 250px);
     grid-column-gap: 15px;
     grid-row-gap: 15px;
     justify-content: center;
     /* padding: 0px 50px; */
+}
+
+.aboutUs_container_informatica {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 250px);
+}
+
+.aboutUs_container_artes {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 250px);
 }
 
 .aboutUs_container_item {
@@ -53,7 +68,7 @@
     width: 100%;
     height: 22%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 5px 10px 10px 10px;
     gap: 10px;
 }
@@ -71,7 +86,7 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
-    
+
 }
 
 .item_top_img {
@@ -101,6 +116,7 @@
 }
 
 .info_nombre {
+    /* letter-spacing: -0.5px; */
     font-size: 22px;
     font-weight: bold;
 }
@@ -115,9 +131,7 @@
     flex: 1;
 }
 
-.info_rol {
-    
-}
+.info_rol {}
 
 .linkedin_bg {
     background-color: #0077b7;
@@ -131,17 +145,28 @@
     background-color: #D04848;
 }
 
+.aboutUs_separador {
+    margin: 20px 0;
+}
 
 
 
 @media (max-width: 1200px) {
     .aboutUs_container {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6, 250px);
         align-items: center;
         justify-items: center;
         grid-row-gap: 15px;
         /* padding: 0px 10px; */
+    }
+
+    .aboutUs_container_informatica {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 250px);
+    }
+    
+    .aboutUs_container_artes {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 250px);
     }
 }
 
@@ -181,7 +206,7 @@
 
     .item_top_img {
         /* background-color: bisque; */
-        width: 25%;
+        width: 28%;
         height: 100%;
         display: flex;
         justify-content: center;
@@ -197,23 +222,46 @@
     }
 
     .item_top_info {
-        width: 75%;
+        width: 72%;
         height: 100%;
         /* background-color: coral; */
         display: flex;
         flex-direction: column;
-        padding: 10px;
+        padding: 20px 10px;
     }
 
     .info_nombre {
-        font-size: 20px;
+        margin: 4px 0;
+        line-height: 18px;
+        letter-spacing: -0.5px;
+        font-size: 18px;
         font-weight: bold;
     }
 
     .info_nombre>span {
-        font-size: 16px;
+        display: inline-block;
+        font-size: 14px;
         font-weight: 500;
     }
 
+    .info_titulacion {
+        font-size: 14px;
+        margin: 5px 0 10px 0;
+        flex: 1;
+    }
 
+    .info_rol {
+        font-size: 14px;
+    }
+
+    .social_item {
+        font-size: 13px;
+        width: 100%;
+        max-width: 90px;
+        min-width: 60px;
+    }
+
+    .social_item svg {
+        font-size: 16px;
+    }
 }
