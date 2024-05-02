@@ -10,7 +10,7 @@ export function Home() {
 
     let calculateFovCanvas = () => {
         if (width >= 901) return 22
-        if (width <= 900) return 14
+        if (width <= 900) return 12
     }
 
     const { t } = useTranslation();
