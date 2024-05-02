@@ -39,8 +39,8 @@
     "modelos_3d__mesa_taller" : "Mesa de herramientas", 
     "modelos_3d__pale" : "Palé", 
     "modelos_3d__tijeras" : "Tijeras", 
-    "vive_experiencia__titulo":"Vive la experiencia",
-    "vive_experiencia__descripcion":"Experimenta desde fuera de la Realidad Virtual la creación de La Falla en el taller fallero, la 'Plantà' en la Plaza del Ayuntamiento y la 'Cremà' del monumento",
+    "accesibilidad__titulo":"Accesibilidad y SmartCity",
+    "accesibilidad__descripcion":"Experimenta desde fuera de la Realidad Virtual la creación de La Falla en el taller fallero, la 'Plantà' en la Plaza del Ayuntamiento y la 'Cremà' del monumento",
     "sobre_nosotros__titulo" : "Sobre nosotros", 
     "sobre_nosotros__" : ""
 }
