@@ -58,16 +58,16 @@ body {
 }
 
 .about_project__tabs_container__header__section:hover {
-    box-shadow: 0px 0px 3px 0px #1ad0789d;
+    box-shadow: 0px 0px 3px 0px coral   ;
     /* border: 1px solid #1ad079; */
 }
 
 .section_active {
     box-shadow: unset;
-    outline: 2px solid #1ad079;
-    border: 1px solid #1ad079;
+    outline: 2px solid coral;
+    border: 1px solid coral;
     background-color: white;
-    color: #018143;
+    color: coral;
 }
 
 .about_project__tabs_container__section {
@@ -111,7 +111,7 @@ body {
 }
 
 .section_objetivos_item svg {
-    color: #1ad079;
+    color: coral;
 }
 
 .about_project__tabs_container__section_right {
@@ -140,7 +140,7 @@ body {
 
 .button_next_section {
     cursor: pointer;
-    outline: 2px solid #1ad079;
+    outline: 2px solid coral;
     border-radius: 15px;
     height: 50px;
     display: flex;
@@ -157,7 +157,7 @@ body {
 }
 
 .button_next_section__text {
-    background-color: #1ad079;
+    background-color: coral;
     height: 100%;
     border-radius: 15px;
     display: flex;
@@ -173,6 +173,7 @@ body {
     align-items: center;
     padding-right: 5px;
 }
+
 
 @media (max-width: 900px) {
     .about_project__tabs_container__section_right {
