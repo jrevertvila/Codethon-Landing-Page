@@ -40,7 +40,13 @@
     "modelos_3d__pale" : "Palé", 
     "modelos_3d__tijeras" : "Tijeras", 
     "accesibilidad__titulo":"Accesibilidad y SmartCity",
+    "accesibilidad__left_titulo":"Accesibilidad",
+    "accesibilidad__right_titulo":"Valencia SmartCity",
     "accesibilidad__descripcion":"Experimenta desde fuera de la Realidad Virtual la creación de La Falla en el taller fallero, la 'Plantà' en la Plaza del Ayuntamiento y la 'Cremà' del monumento",
+    "accesibilidad__accesibilidad_descripcion_p1":"Al trasladar la experiencia de las Fallas al mundo virtual, se derriban barreras físicas y se amplía el acceso a esta celebración cultural a un público más amplio y diverso.",
+    "accesibilidad__smartcity_descripcion_p1":"Memòries en cendra contribuye al objetivo de convertir Valencia en una SmartCity",
+    "accesibilidad__smartcity_descripcion_p2":"Este proyecto aprovecha la tecnología para recrear una experiencia cultural arraigada en la tradición posicionando a Valencia como un referente en la vanguardia de las ciudades inteligentes.",
+    "accesibilidad__accesibilidad_descripcion_p2":"Personas de edades y capacidades diversas pueden participar en la creación y disfrute de las Fallas sin preocuparse por limitaciones físicas o geográficas.",
     "sobre_nosotros__titulo" : "Sobre nosotros", 
     "sobre_nosotros__" : ""
 }
