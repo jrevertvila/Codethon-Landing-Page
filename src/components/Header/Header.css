@@ -105,6 +105,11 @@
         width: 100%;
     }
 
+    .logo {
+        height: 50px;
+        width: 50px;
+    }
+
     .burger_menu {
         display: unset;
     }
@@ -116,7 +121,7 @@
         margin: 0;
         /* background-color: #1ad079; */
         flex-direction: column;
-        height: 100px;
+        height: 70px;
 
         /* margin: 0; */
         /* margin: 40px 0px; */

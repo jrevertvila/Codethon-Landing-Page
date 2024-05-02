@@ -11,12 +11,16 @@ export function Header() {
 
     const [y, setY] = useState(document.scrollingElement.scrollHeight);
     const [scrollDirection, setScrollDirection] = useState("");
-    const [isScrollingUp, setIsScrollingUp] = useState(false)
+    const [isScrollingUp, setIsScrollingUp] = useState(true)
     const [cont, setCont] = useState(0)
     // let cont = 0
 
-    const handleNavigation = useCallback((e) => {
+    // useEffect(() => {
+        
+    // },[cont])
 
+    const handleNavigation = useCallback((cont) => {
+        // console.log("aa");
         if (y > window.scrollY) {
             // console.log(cont);
             // console.log(scrollDirection);
@@ -24,30 +28,36 @@ export function Header() {
                 // console.log("SCROOOOOOOOOLLLL");
                 setCont(0)
                 // console.log("CONT", cont);
-                setCont(cont+1)
+                
             } else {
                 setCont(cont+1)
             }
-            // console.log(cont);
+            
             
             setScrollDirection("up");
-            if (cont > 30) setIsScrollingUp(true);
+            setIsScrollingUp(true);
         } else if (y < window.scrollY) {
+            console.log(cont);
             if (scrollDirection == "up") {
                 // console.log("SCROOOOOOOOOLLLL");
                 setCont(0)
+            } else {
+                setCont(cont+1)
             }
-            setCont(cont+1)
             setScrollDirection("down");
-            if (cont > 30) setIsScrollingUp(false);
+            setIsScrollingUp(false);
         }
         setY(window.scrollY)
     }, [y]);
 
+    let handleNavigationFn = (e) => {
+        handleNavigation(cont)
+    }
+
     useEffect(() => {
-        window.addEventListener("scroll", handleNavigation)
-        return () => window.removeEventListener("scroll", handleNavigation)
-    }, [handleNavigation])
+        window.addEventListener("scroll", handleNavigationFn)
+        return () => window.removeEventListener("scroll", handleNavigationFn)
+    }, [handleNavigationFn])
 
 
     const [isActive, setActive] = useState(false)
@@ -72,7 +82,10 @@ export function Header() {
     // console.log("isScrollingDown", isScrollingDown);
 
     return (
-        <div className={"header" + (isActive ? " header_active" : "") + (scrollPosition >= 70 ? " activeScrolling" : "") + (isScrollingUp == false ? " isScrollingDown" : "")}>
+        <div className={"header" + (isActive ? " header_active" : "") + (scrollPosition >= 70 ? " activeScrolling" : "") + 
+        ((isScrollingUp == false && cont > 30) ? 
+        " isScrollingDown" : 
+        "")}>
             <div className="logo_container">
                 <span className="logo">logo</span>
                 <CiMenuBurger onClick={() => setActive(!isActive)} className="burger_menu" />

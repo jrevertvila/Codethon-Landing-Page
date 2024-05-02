@@ -7,6 +7,7 @@ import fotur from '../../assets/images/fotur.png'
 import edicom from '../../assets/images/edicom.png'
 import nttdata from '../../assets/images/nttdata.png'
 import aladina from '../../assets/images/aladina.svg'
+import artemis from '../../assets/images/ArtemisLogo.png'
 
 
 export function Patrocinadores(){
@@ -19,6 +20,7 @@ export function Patrocinadores(){
             <a href=""><img src={edicom} alt={"edicom"} /></a>
             <a href=""><img src={nttdata} alt={"nttdata"} /></a>
             <a href=""><img src={aladina} alt={"aladina"} /></a>
+            <a href=""><img src={artemis} alt={"aladina"} /></a>
         </div>
     )
 }
