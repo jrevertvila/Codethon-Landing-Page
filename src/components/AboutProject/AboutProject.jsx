@@ -13,6 +13,11 @@ import { IoMdCut } from "react-icons/io";
 import { FaBrush } from "react-icons/fa6";
 import { FaFire } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { BsUnity } from "react-icons/bs";
+import { SiCsharp } from "react-icons/si";
+import { SiAutodeskmaya } from "react-icons/si";
+
+
 
 
 export function AboutProject() {
@@ -71,12 +76,15 @@ export function AboutProject() {
                                 <h3 className='section_title'>{t('sobre_proyecto__seccion2')}</h3>
                                 <p className='section_description'>
                                     {t('sobre_proyecto__seccion2_descripcion')}
+
                                 </p>
-                                {/* <h4 className='section_objetivos'>Objetivos:</h4>
-                                <p className='section_objetivos_item'><IoMdCut /> Coge el cuchillo para tallar la falla</p>
-                                <p className='section_objetivos_item'><FaBrush /> Pintar la falla con el aerógrafo </p>
-                                <p className='section_objetivos_item'><IoBuildSharp /> Montar la falla en el ayuntamiento de Valencia</p>
-                                <p className='section_objetivos_item'><FaFire /> Quemar la falla!</p> */}
+                                {/* <p className="section_description">
+                                    {t('sobre_proyecto__seccion2_descripcion2')}
+                                </p> */}
+                                <h4 className='section_objetivos'>Tecnologias:</h4>
+                                <p className='section_objetivos_item'><BsUnity/><strong>{t('sobre_proyecto__seccion2_tecnologia1_nombre')}</strong>{t('sobre_proyecto__seccion2_tecnologia1')}</p>
+                                <p className='section_objetivos_item'><SiCsharp/><strong>{t('sobre_proyecto__seccion2_tecnologia2_nombre')}</strong>{t('sobre_proyecto__seccion2_tecnologia2')}</p>
+                                <p className='section_objetivos_item'><SiAutodeskmaya/><strong>{t('sobre_proyecto__seccion2_tecnologia3_nombre')}</strong>{t('sobre_proyecto__seccion2_tecnologia3')}</p>
                                 <div className='separator'></div>
                                 <div className='button_next_section' onClick={() => { setSection(secciones[2]) }}>
                                     <div className='button_next_section__text'>{t('sobre_proyecto__boton')}</div>
