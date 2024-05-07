@@ -8,6 +8,7 @@ import useWindowDimensions from "../../hooks/useWindowDimensions";
 export function Header() {
 
 
+    const [isActive, setActive] = useState(false)
 
     const [y, setY] = useState(document.scrollingElement.scrollHeight);
     const [scrollDirection, setScrollDirection] = useState("");
@@ -25,6 +26,7 @@ export function Header() {
             // console.log(cont);
             // console.log(scrollDirection);
             if (scrollDirection == "down") {
+                setActive(false)
                 // console.log("SCROOOOOOOOOLLLL");
                 setCont(0)
                 // console.log("CONT", cont);
@@ -60,7 +62,6 @@ export function Header() {
     }, [handleNavigationFn])
 
 
-    const [isActive, setActive] = useState(false)
     const { height, width } = useWindowDimensions();
     const [scrollPosition, setScrollPosition] = useState(0);
     const [isScrollingDown, setIsScrollingDown] = useState(false);

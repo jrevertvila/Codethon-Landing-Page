@@ -40,8 +40,15 @@
     "modelos_3d__pale" : "Palet", 
     "modelos_3d__tijeras" : "Tisores", 
     "accesibilidad__titulo":"Accessibilitat i SmartCity",
+    "accesibilidad__left_titulo":"Accesibilidad",
+    "accesibilidad__right_titulo":"Valencia SmartCity",
     "accesibilidad__descripcion":"Experimenta desde fora de la Realitat Virtual la creació de La Falla en el taller faller, la 'Plantà' en la Plaça de l'Ajuntament i de la 'Cremà' del monument",
-
+    "accesibilidad__accesibilidad_descripcion_p1":"Al traslladar l'experiència de les Falles al mòn virtual, es derriben barreres físiques i s'amplia l'accés a aquesta celebració cultural a un públic més ampli i divers.",
+    "accesibilidad__accesibilidad_descripcion_p2":"Persones d'edats i capacitats diversas poden participar en la creació i vivença de les Falles sense preocupar-se per limitacions físiques o geogràfiques. Açó promou la inclusió i la diversitat, permitint que un major número de persones experimenten i aprècien aquesta Tradició Valenciana sense importar la seua ubicació o circunstàncies personals.",
+    "accesibilidad__smartcity_descripcion_p1":"Memòries en cendra contribuye al objetivo de convertir Valencia en una SmartCity aprovechando la tecnología para recrear una experiencia cultural arraigada en la tradición y como herramienta para enriquecer la vida urbana y la participación ciudadana",
+    "accesibilidad__smartcity_descripcion_p2":"Aquest projecte aprofita la tecnología per a recrear una experiència cultural arraigada en la tradició posicionant a València com a referent en l'avantguarda de las ciutats intel·ligents.",
     "sobre_nosotros__titulo" : "Sobre nosaltres", 
-    "sobre_nosotros" : ""
+    "sobre_nosotros__subtitulo" : "L'equip de 'Memòries en Cendra' està format per estudiants d'Enginyeria Informàtica i estudiants del Màster de Tecnologies Interactices i Fabricació Digital",
+    "sobre_nosotros__informatica_descripcion":"Funcionalitat en Unity mitjançant Scripts i Desenvolupament d'aquesta 'Landing Page'"  
+
 }

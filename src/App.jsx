@@ -26,9 +26,8 @@ function App() {
       <Home />
       <Patrocinadores />
       <AboutProject />
-
-      <Modelos3d_2/>
       <Accesibilidad />
+      <Modelos3d_2/>
       <AboutUs />
       <Footer />
     </>
