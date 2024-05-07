@@ -37,7 +37,7 @@ export function Header() {
             setScrollDirection("up");
             setIsScrollingUp(true);
         } else if (y < window.scrollY) {
-            console.log(cont);
+            // console.log(cont);
             if (scrollDirection == "up") {
                 // console.log("SCROOOOOOOOOLLLL");
                 setCont(0)
