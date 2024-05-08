@@ -10,7 +10,7 @@ import { useTranslation } from 'react-i18next'
 import { useEffect, useState } from 'react'
 import { Header } from './components/Header/Header.jsx'
 import Footer from './components/Footer/Footer.jsx'
-import Accesibilidad from './components/Accesibilidad/Accesibilidad.jsx'
+import EnfoqueSAS from './components/EnfoqueSAS/EnfoqueSAS.jsx'
 
 function App() {
   const { t, i18n } = useTranslation()
@@ -26,7 +26,7 @@ function App() {
       <Home />
       <Patrocinadores />
       <AboutProject />
-      <Accesibilidad />
+      <EnfoqueSAS />
       <Modelos3d_2/>
       <AboutUs />
       <Footer />
