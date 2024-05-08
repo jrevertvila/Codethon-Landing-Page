@@ -5,11 +5,19 @@ Command: npx gltfjsx@6.2.16 .\Farola2.gltf
 
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
+import { useFrame } from '@react-three/fiber';
 
 export default function Model(props) {
   const { nodes, materials } = useGLTF('/Farola2.gltf')
+  const groupRef = useRef();
+  useFrame(() => {
+    // Aquí puedes actualizar la rotación del modelo
+    if (groupRef.current) {
+      groupRef.current.rotation.y += 0.005; // Por ejemplo, rota en el eje Y a una velocidad de 0.01 radianes por fotograma
+    }
+  });
   return (
-    <group {...props} dispose={null} scale={0.1}>
+    <group {...props} dispose={null} scale={0.1} ref={groupRef} position={[0, -0.45, 0]}>
       <mesh geometry={nodes.Cuerpo.geometry} material={materials['Steel - Satin']} scale={0.2} />
       <mesh geometry={nodes.Ramas.geometry} material={materials['Steel - Satin']} scale={0.2} />
       <mesh geometry={nodes.Lámpara2.geometry} material={materials['Steel - Satin']} scale={0.2} />

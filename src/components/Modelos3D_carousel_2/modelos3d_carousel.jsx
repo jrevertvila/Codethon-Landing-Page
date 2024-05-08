@@ -17,7 +17,7 @@ export default function Modelos3d_2() {
             subtitle: "Este modelo es el monumento principal de la falla",
             alt: "Modelo3d",
             src: "Banco512Blanco.png",
-            modelo3d_filename: "Farola2",
+            modelo3d_filename: "Banco",
             author: "Maria",
         },
         modelo2: {
@@ -25,7 +25,7 @@ export default function Modelos3d_2() {
             subtitle: "Este modelo es el monumento principal de la falla",
             alt: "Modelo3d",
             src: "Banco512Blanco.png",
-            modelo3d_filename: "Scene",
+            modelo3d_filename: "Farola2",
             author: "Maria",
         },
         modelo3: {
@@ -33,7 +33,7 @@ export default function Modelos3d_2() {
             subtitle: "Este modelo es el monumento principal de la falla",
             alt: "Modelo3d",
             src: "Banco512Blanco.png",
-            modelo3d_filename: "Scene",
+            modelo3d_filename: "Falla_low_color",
             author: "Maria",
         },
         modelo4: {
