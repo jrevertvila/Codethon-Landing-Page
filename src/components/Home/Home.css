@@ -147,17 +147,19 @@
         /* margin: 10px 0px 20px 0px; */
         width: 100%;
         font-weight: 700;
-        font-size: 28px;
-        line-height: 50px;
+        font-size: 25px;
+        line-height: 25px;
+        margin: 10px 0;
         text-align: center;
     }
 
     .home_content_text>span {
         align-self: center;
         margin-top: 5px;
-        line-height: 32px;
-        font-size: 16px;
+        line-height: 22px;
+        font-size: 15px;
         text-align: center;
+        margin: 10px 0;
     }
 
     .home_content_text button {
