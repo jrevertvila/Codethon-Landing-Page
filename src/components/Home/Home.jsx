@@ -9,8 +9,11 @@ export function Home() {
     const { height, width } = useWindowDimensions();
 
     let calculateFovCanvas = () => {
-        if (width >= 901) return 22
-        if (width <= 900) return 12
+        let res = 0
+        if (width >= 1400) res = 24
+        if (width >= 901 && width < 1400 ) res = 28
+        if (width <= 900) res = 18
+        return res
     }
 
     const { t } = useTranslation();
@@ -18,7 +21,7 @@ export function Home() {
         <section className="app__wrapper home">
             <div className='home_content'>
                 <div className='home_content_modelo3d'>
-                    <Canvas3DHome fov={calculateFovCanvas()} modelo3d_filename={"Scene"} />
+                    <Canvas3DHome fov={calculateFovCanvas()} modelo3d_filename={"Falla_low_color"} />
                 </div>
                 <div className='home_content_text'>
                     <h1>{t('home__titulo_principal')}</h1>

@@ -13,7 +13,7 @@ export default function Modelos3d_2() {
 
     const modelos3d_json = {
         modelo1: {
-            title: "Falla Principal",
+            title: "Banco",
             subtitle: "Este modelo es el monumento principal de la falla",
             alt: "Modelo3d",
             src: "Banco512Blanco.png",
@@ -21,7 +21,7 @@ export default function Modelos3d_2() {
             author: "Maria",
         },
         modelo2: {
-            title: "Falla Principal",
+            title: "Farola",
             subtitle: "Este modelo es el monumento principal de la falla",
             alt: "Modelo3d",
             src: "Banco512Blanco.png",
@@ -29,7 +29,7 @@ export default function Modelos3d_2() {
             author: "Maria",
         },
         modelo3: {
-            title: "Falla Principal",
+            title: "Falla",
             subtitle: "Este modelo es el monumento principal de la falla",
             alt: "Modelo3d",
             src: "Banco512Blanco.png",
@@ -37,11 +37,11 @@ export default function Modelos3d_2() {
             author: "Maria",
         },
         modelo4: {
-            title: "Falla Principal",
+            title: "Logo Artemis",
             subtitle: "Este modelo es el monumento principal de la falla",
             alt: "Modelo3d",
             src: "Banco512Blanco.png",
-            modelo3d_filename: "Scene",
+            modelo3d_filename: "Planeta",
             author: "Maria",
         },
         modelo5: {

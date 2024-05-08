@@ -3,14 +3,15 @@ import { Canvas } from "@react-three/fiber";
 import { Environment, OrbitControls } from "@react-three/drei";
 // import ModelIphone from "../../assets/3D-Model/Scene.jsx";
 import { Html } from '@react-three/drei'
-import iphoneAsset from '../../assets/images/IphoneAsset.png'
+// import iphoneAsset from '../../assets/images/IphoneAsset.png'
+import falla from '../../assets/images/falla_img.png'
 
 
 
 
 function Loader() {
     // const { progress } = useProgress()
-    return <Html center><img src={iphoneAsset} alt="iphone" /></Html>
+    return <Html center><img style={{marginLeft: "24px", marginTop:"46px"}} src={falla} alt="Falla" /></Html>
 }
 
 
