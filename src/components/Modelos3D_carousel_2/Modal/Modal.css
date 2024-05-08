@@ -16,7 +16,7 @@
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  /* Sombra */
+  min-width: 760px;
   padding: 20px;
 }
 
@@ -38,7 +38,7 @@
 
 .modal-main {
   height: 65vh;
-  width: 35vw;
+  /* width: 35vw; */
   display: flex;
   flex-direction: column;
   padding: 30px 50px;
@@ -74,6 +74,11 @@
 @media (max-width: 900px) {
   .modal-main {
     width: 80vw;
+    padding: 30px 10px;
 
+  }
+
+  .modal-content {
+    min-width: unset;
   }
 }

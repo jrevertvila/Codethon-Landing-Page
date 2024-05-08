@@ -1,5 +1,6 @@
 import Canvas3DModel from '../../Canvas3DModel';
 import './Modal.css'
+import { IoIosCloseCircleOutline } from "react-icons/io";
 
 export default function Modal({ isOpen, onClose, title, subtitle, author, modelo3d_filename, children }) {
     if (!isOpen) return null;
@@ -11,8 +12,8 @@ export default function Modal({ isOpen, onClose, title, subtitle, author, modelo
         }}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                 <header className="modal-header">
-                    <button className="close-button" onClick={onClose}>
-                        X
+                    <button className="close-button" onClick={onClose} style={{fontSize: "24px"}}>
+                        <IoIosCloseCircleOutline />
                     </button>
                 </header>
 
