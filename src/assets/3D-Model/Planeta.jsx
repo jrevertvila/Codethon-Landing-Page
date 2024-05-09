@@ -7,6 +7,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber';
 
+
 export default function Model(props) {
   const { nodes, materials } = useGLTF('/planeta.glb')
   const groupRef = useRef();
@@ -17,7 +18,7 @@ export default function Model(props) {
     }
   });
   return (
-    <group {...props} dispose={null} ref={groupRef} scale={0.004} position={[0, 0.2, 0]}>
+    <group {...props} dispose={null} ref={groupRef} scale={0.004} position={[0, 0.25, 0]}>
       <mesh geometry={nodes.planeta111111.geometry} material={materials.lambert1SG} position={[218.156, 0, -3.794]} rotation={[Math.PI / 2, 0, 0]} />
     </group>
   )

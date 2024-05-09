@@ -6,13 +6,29 @@ import { useEffect, useRef, useState } from 'react';
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import { FaRegArrowAltCircleLeft } from "react-icons/fa";
 import useWindowDimensions from '../../hooks/useWindowDimensions';
+import { t } from 'i18next';
 
 export default function Modelos3d_2() {
     const { height, width } = useWindowDimensions();
 
-
     const modelos3d_json = {
         modelo1: {
+            title: "Falla",
+            subtitle: t('descripcion_modelo_falla'),
+            alt: "Modelo3d",
+            src: "Banco512Blanco.png",
+            modelo3d_filename: "Falla_low_color",
+            author: "Maria",
+        },
+        modelo2: {
+            title: "Logo Codethon Artemis",
+            subtitle: "Este modelo es el monumento principal de la falla",
+            alt: "Modelo3d",
+            src: "Banco512Blanco.png",
+            modelo3d_filename: "Planeta",
+            author: "Maria",
+        },
+        modelo3: {
             title: "Banco",
             subtitle: "Este modelo es el monumento principal de la falla",
             alt: "Modelo3d",
@@ -20,116 +36,100 @@ export default function Modelos3d_2() {
             modelo3d_filename: "Banco",
             author: "Maria",
         },
-        modelo2: {
+        modelo4: {
             title: "Farola",
             subtitle: "Este modelo es el monumento principal de la falla",
             alt: "Modelo3d",
             src: "Banco512Blanco.png",
-            modelo3d_filename: "Farola2",
-            author: "Maria",
-        },
-        modelo3: {
-            title: "Falla",
-            subtitle: "Este modelo es el monumento principal de la falla",
-            alt: "Modelo3d",
-            src: "Banco512Blanco.png",
-            modelo3d_filename: "Falla_low_color",
-            author: "Maria",
-        },
-        modelo4: {
-            title: "Logo Artemis",
-            subtitle: "Este modelo es el monumento principal de la falla",
-            alt: "Modelo3d",
-            src: "Banco512Blanco.png",
-            modelo3d_filename: "Planeta",
+            modelo3d_filename: "Farola",
             author: "Maria",
         },
         modelo5: {
-            title: "Falla Principal",
+            title: "Aerografo",
             subtitle: "Este modelo es el monumento principal de la falla",
             alt: "Modelo3d",
             src: "Banco512Blanco.png",
-            modelo3d_filename: "Scene",
+            modelo3d_filename: "Aerografo",
             author: "Maria",
         },
         modelo6: {
-            title: "Falla Principal",
+            title: "Andamio",
             subtitle: "Este modelo es el monumento principal de la falla",
             alt: "Modelo3d",
             src: "Banco512Blanco.png",
-            modelo3d_filename: "Scene",
+            modelo3d_filename: "Andamio",
             author: "Maria",
         },
         modelo7: {
-            title: "Falla Principal",
+            title: "Atril",
             subtitle: "Este modelo es el monumento principal de la falla",
             alt: "Modelo3d",
             src: "Banco512Blanco.png",
-            modelo3d_filename: "Scene",
+            modelo3d_filename: "Atril",
             author: "Maria",
         },
         modelo8: {
-            title: "Falla Principal",
+            title: "Grupo de Cajas",
             subtitle: "Este modelo es el monumento principal de la falla",
             alt: "Modelo3d",
             src: "Banco512Blanco.png",
-            modelo3d_filename: "Scene",
+            modelo3d_filename: "GrupoCajas",
             author: "Maria",
         },
         modelo9: {
-            title: "Falla Principal",
+            title: "Carretilla",
             subtitle: "Este modelo es el monumento principal de la falla",
             alt: "Modelo3d",
             src: "Banco512Blanco.png",
-            modelo3d_filename: "Scene",
+            modelo3d_filename: "Carretilla",
             author: "Maria",
         },
         modelo10: {
-            title: "Falla Principal",
+            title: "Carretilla",
             subtitle: "Este modelo es el monumento principal de la falla",
             alt: "Modelo3d",
             src: "Banco512Blanco.png",
-            modelo3d_filename: "Scene",
+            modelo3d_filename: "Carretilla",
             author: "Maria",
         },
         modelo11: {
-            title: "Falla Principal",
+            title: "Escalera",
             subtitle: "Este modelo es el monumento principal de la falla",
             alt: "Modelo3d",
             src: "Banco512Blanco.png",
-            modelo3d_filename: "Scene",
+            modelo3d_filename: "Escalera",
             author: "Maria",
         },
         modelo12: {
-            title: "Falla Principal",
+            title: "Fuente",
             subtitle: "Este modelo es el monumento principal de la falla",
             alt: "Modelo3d",
             src: "Banco512Blanco.png",
-            modelo3d_filename: "Scene",
+            modelo3d_filename: "Fuente",
             author: "Maria",
         },
         modelo13: {
-            title: "Falla Principal",
+            title: "Ayuntamiento",
             subtitle: "Este modelo es el monumento principal de la falla",
             alt: "Modelo3d",
             src: "Banco512Blanco.png",
-            modelo3d_filename: "Scene",
+            modelo3d_filename: "Ayuntamiento",
             author: "Maria",
         },
         modelo14: {
-            title: "Falla Principal",
+            title: "Edificio",
             subtitle: "Este modelo es el monumento principal de la falla",
             alt: "Modelo3d",
             src: "Banco512Blanco.png",
-            modelo3d_filename: "Scene",
+            modelo3d_filename: "Edificio1",
             author: "Maria",
         },
         modelo15: {
-            title: "Falla Principal",
+            title: "Edificio2",
             subtitle: "Este modelo es el monumento principal de la falla",
             alt: "Modelo3d",
             src: "Banco512Blanco.png",
-            modelo3d_filename: "Scene",
+            modelo3d_filename: "Edificio2def",
             author: "Maria",
         },
         modelo16: {
@@ -263,7 +263,7 @@ export default function Modelos3d_2() {
                                             contador++
                                             const modelo_item = modelos3d_json[keys[x]];
                                             content_items.push(
-                                                <Modelo3d_item key={"item" + cont_object} alt={modelo_item['alt']} src={modelo_item['src']} title={modelo_item['title'] + x} subtitle={modelo_item['subtitle']} modelo3d_filename={modelo_item['modelo3d_filename']} author={modelo_item['author']} />
+                                                <Modelo3d_item key={"item" + cont_object} alt={modelo_item['alt']} src={modelo_item['src']} title={modelo_item['title']} subtitle={modelo_item['subtitle']} modelo3d_filename={modelo_item['modelo3d_filename']} author={modelo_item['author']} />
                                             )
                                             cont_object++
                                         }

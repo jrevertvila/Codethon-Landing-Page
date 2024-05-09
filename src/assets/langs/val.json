@@ -49,6 +49,7 @@
     "accesibilidad__smartcity_descripcion_p2":"Aquest projecte aprofita la tecnología per a recrear una experiència cultural arraigada en la tradició posicionant a València com a referent en l'avantguarda de las ciutats intel·ligents.",
     "sobre_nosotros__titulo" : "Sobre nosaltres", 
     "sobre_nosotros__subtitulo" : "L'equip de 'Memòries en Cendra' està format per estudiants d'Enginyeria Informàtica i estudiants del Màster de Tecnologies Interactices i Fabricació Digital",
-    "sobre_nosotros__informatica_descripcion":"Funcionalitat en Unity mitjançant Scripts i Desenvolupament d'aquesta 'Landing Page'"  
+    "sobre_nosotros__informatica_descripcion":"Funcionalitat en Unity mitjançant Scripts i Desenvolupament d'aquesta 'Landing Page'", 
+    "descripcion_modelo_falla":"Esta es la falla principal del joc" 
 
 }
