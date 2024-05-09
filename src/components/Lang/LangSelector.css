@@ -68,3 +68,10 @@
     height: 100vh;
     background-color: transparent;
 }
+
+@media (max-width: 900px) {
+    .lang_selector_option {
+        margin-left: -75px;
+
+    }
+}
