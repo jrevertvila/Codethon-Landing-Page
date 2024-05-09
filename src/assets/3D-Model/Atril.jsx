@@ -18,7 +18,7 @@ export default function Model(props) {
     }
   });
   return (
-    <group {...props} dispose={null} ref={groupRef} scale={10} position={[0, -0.5, 0]}>
+    <group {...props} dispose={null} ref={groupRef} scale={10} position={[0, -0.5, 0]} rotation={[0.5,-2,0]}>
       <mesh geometry={nodes.pCube1.geometry} material={materials.standardSurface1} rotation={[Math.PI / 2, 0, 0]} scale={[0.037, 0.037, 0.009]} />
     </group>
   )
