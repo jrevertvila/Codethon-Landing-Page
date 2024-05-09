@@ -1,4 +1,9 @@
-.faqs {}
+.faqs {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 80px;
+    margin: 50px 0px;
+}
 
 .faqs_title {
     width: 100%;
@@ -13,19 +18,20 @@
 }
 
 .faqs_wrapper {
-    margin: 20px 0;
+    margin: 60px 0px 20px 0px;
     display: flex;
-    /* flex-direction: column; */
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    align-items: center;
+    gap: 20px;
 }
 
 .faqs_item {
     border-radius: 40px;
     background-color: white;
     box-shadow: 0 15px 40px #00000011;
-    max-width: 650px;
+    max-width: 900px;
     width: 100%;
 }
 
@@ -53,29 +59,71 @@
 
 .faqs_item_question_active:hover {
     box-shadow: 0px 0px 5px 0px rgba(128, 128, 128, 0.552);
-    
+
 }
 
 .faqs_item_question span {
     flex: 1;
 }
 
+.faqs_item_question svg {
+    margin-left: 10px;
+}
+
 .faqs_item_answer {
-    display: none;
+    height: 0px;
+    /* display: none; */
+    overflow-y: hidden;
+    transition: 0.1s;
     padding: 0px 30px;
-    margin: 25px 0;
+    /* margin: 25px 0; */
+    text-align: justify;
 }
 
 .faqs_item_answer_active {
-    display: block;
+    height: unset;
+    margin: 25px 0;
+    /* padding: 0px 30px;
+    margin: 25px 0; */
+    /* display: block; */
 }
 
-@media (max-width: 1000px) {
-    .faqs_wrapper {
-        flex-direction: column;
-        flex-wrap: unset;
-        justify-content: unset;
-        align-items: center;
+@media (max-width: 800px) {
+    .faqs_title {
+        font-size: 48px;
+        line-height: 55px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .faqs {
+        padding: 0px 20px;
     }
 
+    .faqs_title {
+        font-size: 36px;
+    }
+
+}
+
+@media (max-width: 460px) {
+    .faqs {
+        padding: 0px 20px;
+    }
+
+    .faqs_title {
+        font-size: 32px;
+        line-height: 34px;
+        margin-bottom: 10px;
+    }
+
+    .faqs_item_question {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .faqs_item_answer {
+        font-size: 14px;
+    }
 }

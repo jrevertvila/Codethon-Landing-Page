@@ -29,8 +29,8 @@ function App() {
       <AboutProject />
       <EnfoqueSAS />
       <Modelos3d_2/>
-      <Faqs />
       <AboutUs />
+      <Faqs />
       <Footer />
     </>
   )
