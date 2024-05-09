@@ -1,5 +1,6 @@
 .home {
     /* background-color: beige; */
+    overflow: hidden;
 }
 
 .home_content {
@@ -22,6 +23,7 @@
     justify-content: center;
     align-items: center;
     margin-top: -200px;
+    min-width: 500px;
     /* padding-right: 500px; */
     /* background-color: brown; */
     /* width: 300px; */
@@ -105,7 +107,20 @@
     }
 }
 
+@media (max-width: 1100px) {
+    .home_content {
+        gap: 20px;
+    }
+    .home_content_modelo3d {
+        min-width: unset;
+        max-width: 350px;
+    }
+}
+
 @media (max-width: 1000px) {
+    .home_content_modelo3d {
+        /* max-width: 300px; */
+    }
     .home_content_text span {
         line-height: unset;
     }

@@ -11,7 +11,8 @@ export function Home() {
     let calculateFovCanvas = () => {
         let res = 0
         if (width >= 1400) res = 24
-        if (width >= 901 && width < 1400 ) res = 28
+        if (width >= 1100 && width < 1400 ) res = 33
+        if (width >= 901 && width < 1100 ) res = 45
         if (width <= 900) res = 18
         return res
     }
