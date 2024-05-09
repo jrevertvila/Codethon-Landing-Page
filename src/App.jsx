@@ -11,6 +11,7 @@ import { useEffect, useState } from 'react'
 import { Header } from './components/Header/Header.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import EnfoqueSAS from './components/EnfoqueSAS/EnfoqueSAS.jsx'
+import Faqs from './components/FAQs/Faqs.jsx'
 
 function App() {
   const { t, i18n } = useTranslation()
@@ -28,6 +29,7 @@ function App() {
       <AboutProject />
       <EnfoqueSAS />
       <Modelos3d_2/>
+      <Faqs />
       <AboutUs />
       <Footer />
     </>
