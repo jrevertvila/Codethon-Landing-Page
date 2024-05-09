@@ -2,6 +2,7 @@
     padding: 0px 60px;
     display: flex;
     width: 100%;
+    min-width: 300px;
     height: 130px;
     align-items: center;
     justify-content: space-between;
@@ -43,7 +44,7 @@
 }
 
 .logo {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 80px;
     width: 80px;
     display: flex;

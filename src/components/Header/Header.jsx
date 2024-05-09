@@ -4,7 +4,7 @@ import "./Header.css"
 import { useTranslation } from 'react-i18next';
 import { useCallback, useEffect, useState } from "react";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
-
+import logo from '../../assets/images/logo.jpg'
 export function Header() {
 
 
@@ -88,7 +88,8 @@ export function Header() {
         " isScrollingDown" : 
         "")}>
             <div className="logo_container">
-                <span className="logo">logo</span>
+                {/* <span className="logo">logo</span> */}
+                <img src={logo} alt="logo" className="logo"/>
                 <CiMenuBurger onClick={() => setActive(!isActive)} className="burger_menu" />
             </div>
             <div className={"nav" + (isActive ? " nav_active" : "")}>
