@@ -29,12 +29,13 @@ export default function Modelos3d_2() {
             author: "Maria",
         },
         modelo3: {
-            title: "Banco",
+            title: "Ayuntamiento",
             subtitle: "Este modelo es el monumento principal de la falla",
             alt: "Modelo3d",
             src: "Banco512Blanco.png",
-            modelo3d_filename: "Banco",
+            modelo3d_filename: "Ayuntamiento",
             author: "Maria",
+            
         },
         modelo4: {
             title: "Farola",
@@ -53,12 +54,13 @@ export default function Modelos3d_2() {
             author: "Maria",
         },
         modelo6: {
-            title: "Andamio",
+            title: "Banco",
             subtitle: "Este modelo es el monumento principal de la falla",
             alt: "Modelo3d",
             src: "Banco512Blanco.png",
-            modelo3d_filename: "Andamio",
+            modelo3d_filename: "Banco",
             author: "Maria",
+            
         },
         modelo7: {
             title: "Atril",
@@ -109,11 +111,11 @@ export default function Modelos3d_2() {
             author: "Maria",
         },
         modelo13: {
-            title: "Ayuntamiento",
+            title: "Andamio",
             subtitle: "Este modelo es el monumento principal de la falla",
             alt: "Modelo3d",
             src: "Banco512Blanco.png",
-            modelo3d_filename: "Ayuntamiento",
+            modelo3d_filename: "Andamio",
             author: "Maria",
         },
         modelo14: {
