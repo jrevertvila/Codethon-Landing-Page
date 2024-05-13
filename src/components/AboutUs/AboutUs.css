@@ -150,6 +150,12 @@
     margin: 20px 0;
 }
 
+.aboutUs_description1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
 
 
 @media (max-width: 1200px) {
