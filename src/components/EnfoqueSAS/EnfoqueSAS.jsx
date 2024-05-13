@@ -13,8 +13,8 @@ export default function EnfoqueSAS() {
 
     return (
         <section className="app__wrapper enfoqueSAS">
-            <h2 className='enfoqueSAS__titulo'>Enfoque S.A.S:</h2>
-            <p className='enfoqueSAS__subtitulo'>Sostenibilidad, Acesibilidad y SmartCity</p>
+            <h2 className='enfoqueSAS__titulo'>{t('enfoqueSAS__titulo')}</h2>
+            <p className='enfoqueSAS__subtitulo'>{t('enfoqueSAS__subtitulo')}</p>
             <section className='enfoqueSAS__section'>
                 <div className='enfoqueSAS__section__main'>
                     <h3 className='enfoqueSAS__section__main_title'>{t('enfoqueSAS__sostenibilidad_titulo')}</h3>
