@@ -17,6 +17,10 @@ import { BsUnity } from "react-icons/bs";
 import { SiCsharp } from "react-icons/si";
 import { SiAutodeskmaya } from "react-icons/si";
 import LogoPrueba from '../../assets/images/Memòries en Cendra.png'
+import { FaRegFileCode } from "react-icons/fa";
+import { MdDesignServices } from "react-icons/md";
+
+
 
 
 
@@ -103,14 +107,12 @@ export function AboutProject() {
                         if (section == secciones[2]) return <article className='about_project__tabs_container__section'>
                             <div className='about_project__tabs_container__section_left'>
                                 <h3 className='section_title'>{t('sobre_proyecto__seccion3')}</h3>
-                                <p className='section_description'>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
-                                </p>
-                                {/* <h4 className='section_objetivos'>Objetivos:</h4>
-                                <p className='section_objetivos_item'><IoMdCut /> Coge el cuchillo para tallar la falla</p>
-                                <p className='section_objetivos_item'><FaBrush /> Pintar la falla con el aerógrafo </p>
-                                <p className='section_objetivos_item'><IoBuildSharp /> Montar la falla en el ayuntamiento de Valencia</p>
-                                <p className='section_objetivos_item'><FaFire /> Quemar la falla!</p> */}
+                                <p className='section_description'>{t('sobre_proyecto__seccion3_descripcion')}</p>
+                                <h4 className='section_objetivos'>Objetivos:</h4>
+                                <p className='section_objetivos_item'><FaRegFileCode /><strong>{t('sobre_proyecto__seccion3_desarrollo_titulo')}</strong>
+                                 {t('sobre_proyecto__seccion3_desarrollo')}           </p>
+                                <p className='section_objetivos_item'><MdDesignServices/><strong>{t('sobre_proyecto__seccion3_diseño_titulo')}</strong>
+                                {t('sobre_proyecto__seccion3_diseño')}</p>
                                 <div className='separator'></div>
                                 <div className='button_next_section'>
                                     <div className='button_next_section__text'>{t('sobre_proyecto__boton')}</div>

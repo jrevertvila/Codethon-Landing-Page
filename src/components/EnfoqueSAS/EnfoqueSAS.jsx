@@ -17,10 +17,10 @@ export default function EnfoqueSAS() {
             <p className='enfoqueSAS__subtitulo'>Sostenibilidad, Acesibilidad y SmartCity</p>
             <section className='enfoqueSAS__section'>
                 <div className='enfoqueSAS__section__main'>
-                    <h3 className='enfoqueSAS__section__main_title'>Fomentamos la sostenibilidad</h3>
+                    <h3 className='enfoqueSAS__section__main_title'>{t('enfoqueSAS__sostenibilidad_titulo')}</h3>
                     <div className='enfoqueSAS__section__main_separador'></div>
-                    <p className='enfoqueSAS__section__main_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p className='enfoqueSAS__section__main_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p className='enfoqueSAS__section__main_text'>{t('enfoqueSAS__sostenibilidad_p1')}</p>
+                    <p className='enfoqueSAS__section__main_text'>{t('enfoqueSAS__sostenibilidad_p2')}</p>
                 </div>
                 <div className='enfoqueSAS__section__img'>
                     <img src={sostenibilidad} alt="sostenibilidad" className='img_sostenibilidad' />
@@ -35,10 +35,10 @@ export default function EnfoqueSAS() {
                                     <img src={accesibilidad} alt="accesibilidad" className='img_accesibilidad' />
                                 </div>
                                 <div className='enfoqueSAS__section__main'>
-                                    <h3 className='enfoqueSAS__section__main_title'>Apostamos por la accesibilidad</h3>
+                                    <h3 className='enfoqueSAS__section__main_title'>{t('enfoqueSAS__accesibilidad_titulo')}</h3>
                                     <div className='enfoqueSAS__section__main_separador'></div>
-                                    <p className='enfoqueSAS__section__main_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    <p className='enfoqueSAS__section__main_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <p className='enfoqueSAS__section__main_text'>{t('enfoqueSAS__accesibilidad_p1')}</p>
+                                    <p className='enfoqueSAS__section__main_text'>{t('enfoqueSAS__accesibilidad_p2')}</p>
                                 </div>
                             </>
 
@@ -48,10 +48,10 @@ export default function EnfoqueSAS() {
                             return (
                                 <>
                                     <div className='enfoqueSAS__section__main'>
-                                        <h3 className='enfoqueSAS__section__main_title'>Apostamos por la accesibilidad</h3>
+                                        <h3 className='enfoqueSAS__section__main_title'>{t('enfoqueSAS__accesibilidad_titulo')}</h3>
                                         <div className='enfoqueSAS__section__main_separador'></div>
-                                        <p className='enfoqueSAS__section__main_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                        <p className='enfoqueSAS__section__main_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        <p className='enfoqueSAS__section__main_text'>{t('enfoqueSAS__accesibilidad_p1')}</p>
+                                        <p className='enfoqueSAS__section__main_text'>{t('enfoqueSAS__accesibilidad_p2')}</p>
                                     </div>
                                     <div className='enfoqueSAS__section__img'>
                                         <img src={accesibilidad} alt="accesibilidad" className='img_accesibilidad' />
@@ -66,10 +66,10 @@ export default function EnfoqueSAS() {
             </section>
             <section className='enfoqueSAS__section'>
                 <div className='enfoqueSAS__section__main'>
-                    <h3 className='enfoqueSAS__section__main_title'>Convertimos Valencia en una ciudad más inteligente</h3>
+                    <h3 className='enfoqueSAS__section__main_title'>{t('enfoqueSAS__smartcity_titulo')}</h3>
                     <div className='enfoqueSAS__section__main_separador'></div>
-                    <p className='enfoqueSAS__section__main_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p className='enfoqueSAS__section__main_text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p className='enfoqueSAS__section__main_text'>{t('enfoqueSAS__smartcity_p1')}</p>
+                    <p className='enfoqueSAS__section__main_text'>{t('enfoqueSAS__smartcity_p2')}</p>
                 </div>
                 <div className='enfoqueSAS__section__img'>
                     <img src={smartcity_sostenible} alt="accesibilidad" className='img_smartcity' />
