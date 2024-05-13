@@ -135,11 +135,11 @@ export default function Modelos3d_2() {
             author: "Maria",
         },
         modelo16: {
-            title: "Falla Principal",
+            title: "Filmoteca",
             subtitle: "Este modelo es el monumento principal de la falla",
             alt: "Modelo3d",
             src: "Banco512Blanco.png",
-            modelo3d_filename: "Scene",
+            modelo3d_filename: "Filmoteca",
             author: "Maria",
         },
         modelo17: {
