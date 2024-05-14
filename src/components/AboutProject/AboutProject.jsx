@@ -16,7 +16,8 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { BsUnity } from "react-icons/bs";
 import { SiCsharp } from "react-icons/si";
 import { SiAutodeskmaya } from "react-icons/si";
-import LogoPrueba from '../../assets/images/Memòries en Cendra.png'
+// import LogoPrueba from '../../assets/images/Memòries en Cendra.png'
+import Logo from '../../assets/LOGOS/logoSinFondo/logoCircularNaranja.png'
 import { FaRegFileCode } from "react-icons/fa";
 import { MdDesignServices } from "react-icons/md";
 
@@ -72,7 +73,7 @@ export function AboutProject() {
                             </div>
 
                             <div className='about_project__tabs_container__section_right'>
-                                <img src={LogoPrueba} alt="" className='section_objetivos'/>
+                                <img src={Logo} alt="" className='section_objetivos'/>
                             </div>
 
                         </article>

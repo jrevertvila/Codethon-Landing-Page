@@ -3,8 +3,7 @@ import { CiMenuBurger } from "react-icons/ci";
 import "./Header.css"
 import { useTranslation } from 'react-i18next';
 import { useCallback, useEffect, useState } from "react";
-import useWindowDimensions from "../../hooks/useWindowDimensions";
-import logo from '../../assets/images/logo.jpg'
+import logo from '../../assets/LOGOS/logoSinFondo/logoCircularNegro.png'
 export function Header() {
 
 
@@ -14,34 +13,19 @@ export function Header() {
     const [scrollDirection, setScrollDirection] = useState("");
     const [isScrollingUp, setIsScrollingUp] = useState(true)
     const [cont, setCont] = useState(0)
-    // let cont = 0
-
-    // useEffect(() => {
-        
-    // },[cont])
-
     const handleNavigation = useCallback((cont) => {
-        // console.log("aa");
         if (y > window.scrollY) {
-            // console.log(cont);
-            // console.log(scrollDirection);
             if (scrollDirection == "down") {
                 setActive(false)
-                // console.log("SCROOOOOOOOOLLLL");
-                setCont(0)
-                // console.log("CONT", cont);
-                
+                setCont(0)                
             } else {
                 setCont(cont+1)
-            }
-            
+            }  
             
             setScrollDirection("up");
             setIsScrollingUp(true);
         } else if (y < window.scrollY) {
-            // console.log(cont);
             if (scrollDirection == "up") {
-                // console.log("SCROOOOOOOOOLLLL");
                 setCont(0)
             } else {
                 setCont(cont+1)
@@ -62,9 +46,7 @@ export function Header() {
     }, [handleNavigationFn])
 
 
-    const { height, width } = useWindowDimensions();
     const [scrollPosition, setScrollPosition] = useState(0);
-    const [isScrollingDown, setIsScrollingDown] = useState(false);
     const { t } = useTranslation();
 
     const handleScroll = () => {
@@ -79,8 +61,6 @@ export function Header() {
         };
     }, []);
 
-    // console.log("isScrollingUp", isScrollingUp);
-    // console.log("isScrollingDown", isScrollingDown);
 
     return (
         <div className={"header" + (isActive ? " header_active" : "") + (scrollPosition >= 70 ? " activeScrolling" : "") + 
@@ -88,7 +68,6 @@ export function Header() {
         " isScrollingDown" : 
         "")}>
             <div className="logo_container">
-                {/* <span className="logo">logo</span> */}
                 <img src={logo} alt="logo" className="logo"/>
                 <CiMenuBurger onClick={() => setActive(!isActive)} className="burger_menu" />
             </div>

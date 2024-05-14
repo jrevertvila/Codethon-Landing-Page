@@ -23,7 +23,7 @@ export function AboutUs() {
             <h2 className='aboutUs_title'>{t('sobre_nosotros__titulo')}</h2>
             <p className='aboutUs_subtitle'> {t('sobre_nosotros__subtitulo')} </p>
             <h3 className='aboutUs_section_title'>Ingeniería Informática</h3>
-            <p className='aboutUs_description1'>{t('sobre_nosotros__informatica_descripcion')}</p>
+            {/* <p className='aboutUs_description1'>{t('sobre_nosotros__informatica_descripcion')}</p> */}
             <div className='aboutUs_container aboutUs_container_informatica'>
                 <AboutUsItem src={hombre} alt={"foto joel"} nombre={"Joel Revert Vila"} style={{justifySelf: "flex-end"}}
                     edad={23} titulacion={"Grado Superior en Desarrollo Aplicaciones Web, Cursando Ingeniería Informática UPV"}

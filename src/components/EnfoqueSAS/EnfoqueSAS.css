@@ -92,7 +92,7 @@
 .enfoqueSAS__section__main_separador {
     width: 50%;
     border-top: 1px solid rgb(245, 245, 245);
-    margin: 30px 0;
+    margin: 20px 0;
     box-shadow: 0px 0px 2px rgba(228, 228, 228, 0.123);
 }
 
@@ -100,6 +100,7 @@
     margin: 10px 0;
     max-width: 90%;
     text-align: justify;
+    font-size: 18px;
     /* text-justify: inter-word; */
 }
 
