@@ -72,15 +72,15 @@ export function Header() {
         " isScrollingDown" : 
         "")}>
             <div className="logo_container">
-                <img src={logo} alt="logo" className="logo"/>
+                <a onClick={() => setActive(false)} href="#header"><img src={logo} alt="logo" className="logo"/></a>
                 <CiMenuBurger onClick={() => setActive(!isActive)} className="burger_menu" />
             </div>
             <div className={"nav" + (isActive ? " nav_active" : "")}>
-                <a href="#aboutproject" className="nav_item_container"><span>{t('header__sobre_proyecto')}</span><div className="line"></div></a>
-                <a href="#enfoquesas" className="nav_item_container"><span>{t('header__enfoque_sas')}</span><div className="line"></div></a>
-                <a href="#modelos" className="nav_item_container"><span>{t('header__modelo_3d')}</span><div className="line"></div></a>
-                <a href="#aboutus" className="nav_item_container"><span>{t('header__sobre_nosotros')}</span><div className="line"></div></a>
-                <a href="#faqs" className="nav_item_container"><span>{t('header__faqs')}</span><div className="line"></div></a>
+                <a onClick={() => setActive(false)} href="#aboutproject" className="nav_item_container"><span>{t('header__sobre_proyecto')}</span><div className="line"></div></a>
+                <a onClick={() => setActive(false)} href="#enfoquesas" className="nav_item_container"><span>{t('header__enfoque_sas')}</span><div className="line"></div></a>
+                <a onClick={() => setActive(false)} href="#modelos" className="nav_item_container"><span>{t('header__modelo_3d')}</span><div className="line"></div></a>
+                <a onClick={() => setActive(false)} href="#aboutus" className="nav_item_container"><span>{t('header__sobre_nosotros')}</span><div className="line"></div></a>
+                <a onClick={() => setActive(false)} href="#faqs" className="nav_item_container"><span>{t('header__faqs')}</span><div className="line"></div></a>
                 <LangSelector />
             </div>
             
