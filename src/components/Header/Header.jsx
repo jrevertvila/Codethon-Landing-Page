@@ -3,8 +3,8 @@ import { CiMenuBurger } from "react-icons/ci";
 import "./Header.css"
 import { useTranslation } from 'react-i18next';
 import { useCallback, useEffect, useState } from "react";
-// import logo from '../../assets/LOGOS/logoSinFondo/logoCircularAmarillo.png'
-import logo from '../../assets/LOGOS/logoSinFondo/logoCircularNegro.png'
+import logo from '../../assets/LOGOS/logoSinFondo/logoCircularAmarillo.png'
+// import logo from '../../assets/LOGOS/logoSinFondo/logoCircularNegro.png'
 import { FaArrowAltCircleUp } from "react-icons/fa";
 
 
