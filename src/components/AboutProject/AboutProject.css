@@ -58,29 +58,24 @@ body {
 }
 
 .about_project__tabs_container__header__section:hover {
-    box-shadow: 0px 0px 3px 0px coral   ;
-    /* border: 1px solid #1ad079; */
+    box-shadow: 0px 0px 3px 0px #ff8500   ;
 }
 
 .section_active {
     box-shadow: unset;
-    outline: 2px solid coral;
-    border: 1px solid coral;
+    outline: 2px solid #ff8500;
+    border: 1px solid #ff8500;
     background-color: white;
-    color: coral;
+    color: #ff8500;
 }
 
 .about_project__tabs_container__section {
     width: 100%;
-    /* height: 480px; */
     display: flex;
-    /* border: 1px solid black; */
-    /* background-color: white; */
 }
 
 .about_project__tabs_container__section_left {
     border-radius: 15px;
-    /* box-shadow: 0 15px 40px #0000001a; */
     box-shadow: 0px 0px 5px 0px rgb(206, 206, 206);
     background-color: white;
     flex: 1;
@@ -111,7 +106,7 @@ body {
 }
 
 .section_objetivos_item svg {
-    color: coral;
+    color: #ff8500;
 }
 
 .about_project__tabs_container__section_right {
@@ -140,7 +135,7 @@ body {
 
 .button_next_section {
     cursor: pointer;
-    outline: 2px solid coral;
+    outline: 2px solid #ff8500;
     border-radius: 15px;
     height: 50px;
     display: flex;
@@ -157,7 +152,7 @@ body {
 }
 
 .button_next_section__text {
-    background-color: coral;
+    background-color: #ff8500;
     height: 100%;
     border-radius: 15px;
     display: flex;

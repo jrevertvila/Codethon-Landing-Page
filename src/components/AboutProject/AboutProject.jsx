@@ -115,13 +115,13 @@ export function AboutProject() {
                                 <p className='section_objetivos_item'><MdDesignServices/><strong>{t('sobre_proyecto__seccion3_diseño_titulo')}</strong>
                                 {t('sobre_proyecto__seccion3_diseño')}</p>
                                 <div className='separator'></div>
-                                <div className='button_next_section'>
+                                {/* <div className='button_next_section'>
                                     <div className='button_next_section__text'>{t('sobre_proyecto__boton')}</div>
                                     <div className='button_next_section__icon'>
                                         <FaArrowRightLong />
                                     </div>
 
-                                </div>
+                                </div> */}
                             </div>
 
                             <div className='about_project__tabs_container__section_right'>

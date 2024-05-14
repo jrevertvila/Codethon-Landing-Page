@@ -10,7 +10,7 @@ export default function Footer() {
         <footer className="app__footer">
             <img src={upv_logo} alt="logo upv" className='footer_upv_logo'/>
             <span>
-                Memories en Cendra - Codethon 2024
+                Memòries en Cendra - Codethon 2024
             </span>
             <img src={ArtemisClubLogo} alt="logo upv" className='footer_artemis_logo'/>
         </footer>
