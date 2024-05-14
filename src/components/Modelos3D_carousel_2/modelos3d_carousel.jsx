@@ -24,7 +24,7 @@ export default function Modelos3d_2() {
             title: t('modelo3d__modelo2_titulo'),
             subtitle: t('modelo3d__modelo2_descripcion'),
             alt: "Modelo3d",
-            src: "banco.png",
+            src: "planetA.png",
             modelo3d_filename: "Planeta",
             author: "",
         },
