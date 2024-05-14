@@ -5,7 +5,7 @@ import FaqsItem from './FaqsItem';
 export default function Faqs() {
 
     return (
-        <section className='faqs'>
+        <section className='faqs' id='faqs'>
             <h2 className='faqs_title'>Preguntas frecuentes</h2>
             <p className='faqs_subtitle'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
             <div className='faqs_wrapper'>

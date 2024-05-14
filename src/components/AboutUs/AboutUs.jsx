@@ -19,7 +19,7 @@ export function AboutUs() {
 
 
     return (
-        <div className="app__wrapper aboutUs_section">
+        <div className="app__wrapper aboutUs_section" id='aboutus'>
             <h2 className='aboutUs_title'>{t('sobre_nosotros__titulo')}</h2>
             <p className='aboutUs_subtitle'> {t('sobre_nosotros__subtitulo')} </p>
             <h3 className='aboutUs_section_title'>Ingeniería Informática</h3>

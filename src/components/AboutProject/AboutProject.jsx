@@ -35,7 +35,7 @@ export function AboutProject() {
         if (s != section) setSection('s')
     }
     return (
-        <div className="app__wrapper about_project">
+        <div className="app__wrapper about_project" id='aboutproject'>
             <h2 className='about_project__title'>{t('sobre_proyecto__titulo')}</h2>
             <span className='about_project__subtitle'>{t('sobre_proyecto__subtitulo')}</span>
             <div className='about_project__tabs_container'>

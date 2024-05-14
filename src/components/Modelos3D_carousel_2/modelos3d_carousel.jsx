@@ -229,7 +229,7 @@ export default function Modelos3d_2() {
     // console.log(move_);
 
     return (
-        <div className='app__wrapper modelos_page_container'>
+        <div className='app__wrapper modelos_page_container' id='modelos'>
             <h2 className='modelos__page_title'>Modelos 3D</h2>
             <div className="carousel">
                 {/* <div className='anterior' onClick={() => setMoveFn(move_ - (maxScrollPaged))}>

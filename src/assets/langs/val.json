@@ -1,8 +1,8 @@
 {
-    "header__inicio" : "Inici", 
+    "header__faqs" : "FAQs", 
     "header__sobre_proyecto" : "Sobre el Projecte", 
     "header__modelo_3d" : "Models 3D",
-    "header__vive_experiencia" : "Viu l'experiència", 
+    "header__enfoque_sas" : "Enfocament S.A.S", 
     "header__sobre_nosotros" : "Sobre nosaltres", 
     "home__titulo_principal" : "MEMÒRIES EN CENDRA: ", 
     "home__titulo_principal_inmersio" : "Immersió en la Tradició", 

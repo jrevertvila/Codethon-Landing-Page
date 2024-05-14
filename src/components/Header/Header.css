@@ -78,6 +78,24 @@
     border-bottom: 2px solid #1ad079;
 }
 
+.goUpPage {
+    cursor: pointer;
+    color: #ff8500;
+    font-size: 36px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: 0.1s;
+}
+
+.goUpPage:hover {
+    scale: 1.1;
+}
+
+.goUpPage:active {
+    scale: 1.2;
+}
+
 /* RESPONSIVE */
 
 @media (max-width: 1200px) {

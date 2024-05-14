@@ -26,7 +26,7 @@ export default function EnfoqueSAS() {
                     <img src={sostenibilidad} alt="sostenibilidad" className='img_sostenibilidad' />
                 </div>
             </section>
-            <section className='enfoqueSAS__section'>
+            <section className='enfoqueSAS__section' id='enfoquesas'>
                 {
                     width > 1000 ? (() => {
                         return (

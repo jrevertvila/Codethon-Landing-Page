@@ -5,6 +5,9 @@ import { useTranslation } from 'react-i18next';
 import { useCallback, useEffect, useState } from "react";
 // import logo from '../../assets/LOGOS/logoSinFondo/logoCircularAmarillo.png'
 import logo from '../../assets/LOGOS/logoSinFondo/logoCircularNegro.png'
+import { FaArrowAltCircleUp } from "react-icons/fa";
+
+
 export function Header() {
 
 
@@ -64,7 +67,7 @@ export function Header() {
 
 
     return (
-        <div className={"header" + (isActive ? " header_active" : "") + (scrollPosition >= 70 ? " activeScrolling" : "") + 
+        <div id="header" className={"header" + (isActive ? " header_active" : "") + (scrollPosition >= 70 ? " activeScrolling" : "") + 
         ((isScrollingUp == false && cont > 30) ? 
         " isScrollingDown" : 
         "")}>
@@ -73,13 +76,15 @@ export function Header() {
                 <CiMenuBurger onClick={() => setActive(!isActive)} className="burger_menu" />
             </div>
             <div className={"nav" + (isActive ? " nav_active" : "")}>
-                <div className="nav_item_container"><span>{t('header__inicio')}</span><div className="line"></div></div>
-                <div className="nav_item_container"><span>{t('header__sobre_proyecto')}</span><div className="line"></div></div>
-                <div className="nav_item_container"><span>{t('header__modelo_3d')}</span><div className="line"></div></div>
-                <div className="nav_item_container"><span>{t('header__vive_experiencia')}</span><div className="line"></div></div>
-                <div className="nav_item_container"><span>{t('header__sobre_nosotros')}</span><div className="line"></div></div>
+                <a href="#aboutproject" className="nav_item_container"><span>{t('header__sobre_proyecto')}</span><div className="line"></div></a>
+                <a href="#enfoquesas" className="nav_item_container"><span>{t('header__enfoque_sas')}</span><div className="line"></div></a>
+                <a href="#modelos" className="nav_item_container"><span>{t('header__modelo_3d')}</span><div className="line"></div></a>
+                <a href="#aboutus" className="nav_item_container"><span>{t('header__sobre_nosotros')}</span><div className="line"></div></a>
+                <a href="#faqs" className="nav_item_container"><span>{t('header__faqs')}</span><div className="line"></div></a>
                 <LangSelector />
             </div>
+            
+            { y >= 100 ? <a href="#header"><FaArrowAltCircleUp  className="goUpPage"/></a> : <></>}            
         </div>
     )
 }
