@@ -16,7 +16,7 @@ export default function Modelos3d_2() {
             title: t('modelo3d__modelo1_titulo'),
             subtitle: t('modelo3d__modelo1_descripcion'),
             alt: "Modelo3d",
-            src: "falla_img.png",
+            src: "Fallacartoon1.png",
             modelo3d_filename: "Falla_low_color",
             author: "",
         },

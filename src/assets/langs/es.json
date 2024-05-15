@@ -90,6 +90,8 @@
     "accesibilidad__accesibilidad_descripcion_p2":"Personas de edades y capacidades diversas pueden participar en la creación y disfrute de las Fallas sin preocuparse por limitaciones físicas o geográficas.",
     "sobre_nosotros__titulo" : "Sobre nosotros", 
     "sobre_nosotros__subtitulo" : "El equipo de 'Memòries en Cendra' está compuesto por estudiantes de Ingeniera Informática y estudiantes del Màster de Tecnologias Interactivas y Fabricación Digital",
+    "sobre_nosotros__edad":"Edad: ", 
+    "sobre_nosotros__rol":"Rol en el proyecto", 
     "sobre_nosotros__informatica_descripcion":"Funcionalidad en Unity mediante Scripts y Desarrollo de esta 'Landing Page'", 
     "sobre_nosotros__informatica_titulo":"Ingeniería Informática",
     "sobre_nosotros__ifab_titulo":"Tecnologías Interactivas y Fabricación Digital",
