@@ -1,3 +1,4 @@
+import { t } from 'i18next';
 import './Faqs.css'
 import FaqsItem from './FaqsItem';
 
@@ -6,47 +7,47 @@ export default function Faqs() {
 
     return (
         <section className='faqs' id='faqs'>
-            <h2 className='faqs_title'>Preguntas frecuentes</h2>
-            <p className='faqs_subtitle'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            <h2 className='faqs_title'>{t('FAQ__titulo')}</h2>
+            <p className='faqs_subtitle'>{t('FAQ__subtitulo')}</p>
             <div className='faqs_wrapper'>
                 <FaqsItem
-                    pregunta={"¿Cómo surge la idea de crear una experiencia de realidad virtual sobre las Fallas?"}
-                    respuesta={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."}
+                    pregunta={t('FAQ__pregunta1')}
+                    respuesta={t('FAQ__respuesta1')}
                 />
 
                 <FaqsItem
-                    pregunta={"¿Cuál es el objetivo de este proyecto de realidad virtual?"}
-                    respuesta={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."}
+                    pregunta={t('FAQ__pregunta2')}
+                    respuesta={t('FAQ__respuesta2')}
                 />
 
                 <FaqsItem
-                    pregunta={"¿Quiénes pueden disfrutar de esta experiencia de realidad virtual?"}
-                    respuesta={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."}
+                    pregunta={t('FAQ__pregunta3')}
+                    respuesta={t('FAQ__respuesta3')}
                 />
 
                 <FaqsItem
-                    pregunta={"¿Cuál es el alcance futuro de este proyecto?"}
-                    respuesta={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."}
+                    pregunta={t('FAQ__pregunta4')}
+                    respuesta={t('FAQ__respuesta4')}
                 />
 
                 <FaqsItem
-                    pregunta={"¿Se planea ofrecer esta experiencia en otros idiomas además del valenciano?"}
-                    respuesta={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."}
+                    pregunta={t('FAQ__pregunta5')}
+                    respuesta={t('FAQ__respuesta5')}
                 />
 
                 <FaqsItem
-                    pregunta={"¿Qué medidas de accesibilidad se han implementado para garantizar que esta experiencia sea inclusiva para todos los usuarios?"}
-                    respuesta={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."}
+                    pregunta={t('FAQ__pregunta6')}
+                    respuesta={t('FAQ__respuesta6')}
                 />
 
                 <FaqsItem
-                    pregunta={"¿El juego ya está terminado?"}
-                    respuesta={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."}
+                    pregunta={t('FAQ__pregunta7')}
+                    respuesta={t('FAQ__respuesta7')}
                 />
 
                 <FaqsItem
-                    pregunta={"¿Dónde puedo acceder a esta experiencia de realidad virtual?"}
-                    respuesta={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."}
+                    pregunta={t('FAQ__pregunta8')}
+                    respuesta={t('FAQ__respuesta8')}
                 />
             </div>
 
