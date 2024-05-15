@@ -119,6 +119,14 @@ body {
     padding: 20px;
 }
 
+.rols_en_equip {
+    min-height: 380px;
+}
+
+.about_project__tabs_container__section_right iframe {
+    margin-top: 30px;
+}
+
 .about_project__tabs_container__section_right img {
     width: 50%;
     max-width: 200px;
@@ -159,6 +167,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 0px 15px;
+    color: white;
 }
 
 .button_next_section__icon {
@@ -171,8 +180,12 @@ body {
 
 
 @media (max-width: 900px) {
+    .about_project__tabs_container__section {
+        flex-direction: column;
+    }
     .about_project__tabs_container__section_right {
-        display: none;
+        /* display: none; */
+        width: 100%;
     }
 }
 

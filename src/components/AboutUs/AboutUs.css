@@ -1,4 +1,5 @@
 .aboutUs_section {
+    margin-top: 50px;
     align-items: center;
     padding: 0px 80px 50px 80px;
 }
@@ -34,13 +35,16 @@
 }
 
 .aboutUs_container_informatica {
+    column-gap: 30px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 250px);
 }
 
 .aboutUs_container_artes {
+    column-gap: 30px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 250px);
+    row-gap: 30px;
 }
 
 .aboutUs_container_item {

@@ -28,7 +28,7 @@ import { MdDesignServices } from "react-icons/md";
 
 export function AboutProject() {
     const { t } = useTranslation();
-    let secciones = ["en_que_consiste","tecnologias","seccion3"]
+    let secciones = ["en_que_consiste", "tecnologias", "seccion3"]
     const [section, setSection] = useState(secciones[0]);
 
     let change_section = (s) => {
@@ -45,7 +45,7 @@ export function AboutProject() {
 
                     <div className={"about_project__tabs_container__header__section" + (section == secciones[1] ? " section_active" : '')} onClick={() => { setSection(secciones[1]) }}>{t('sobre_proyecto__seccion2')}</div>
 
-                    
+
                     <div className={"about_project__tabs_container__header__section" + (section == secciones[2] ? " section_active" : '')} onClick={() => { setSection(secciones[2]) }}>{t('sobre_proyecto__seccion3')}</div>
                 </header>
 
@@ -73,7 +73,13 @@ export function AboutProject() {
                             </div>
 
                             <div className='about_project__tabs_container__section_right'>
-                                <img src={Logo} alt="" className='section_objetivos'/>
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/VkJHwuK0NC8?si=UT1i1vUq9HphowTy"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen></iframe>
                             </div>
 
                         </article>
@@ -85,9 +91,9 @@ export function AboutProject() {
 
                                 </p>
                                 <h4 className='section_objetivos'>{t('sobre_proyecto__tecnologias_titulo')}</h4>
-                                <p className='section_objetivos_item'><BsUnity/><strong>{t('sobre_proyecto__seccion2_tecnologia1_nombre')}</strong>{t('sobre_proyecto__seccion2_tecnologia1')}</p>
-                                <p className='section_objetivos_item'><SiCsharp/><strong>{t('sobre_proyecto__seccion2_tecnologia2_nombre')}</strong>{t('sobre_proyecto__seccion2_tecnologia2')}</p>
-                                <p className='section_objetivos_item'><SiAutodeskmaya/><strong>{t('sobre_proyecto__seccion2_tecnologia3_nombre')}</strong>{t('sobre_proyecto__seccion2_tecnologia3')}</p>
+                                <p className='section_objetivos_item'><BsUnity /><strong>{t('sobre_proyecto__seccion2_tecnologia1_nombre')}</strong>{t('sobre_proyecto__seccion2_tecnologia1')}</p>
+                                <p className='section_objetivos_item'><SiCsharp /><strong>{t('sobre_proyecto__seccion2_tecnologia2_nombre')}</strong>{t('sobre_proyecto__seccion2_tecnologia2')}</p>
+                                <p className='section_objetivos_item'><SiAutodeskmaya /><strong>{t('sobre_proyecto__seccion2_tecnologia3_nombre')}</strong>{t('sobre_proyecto__seccion2_tecnologia3')}</p>
                                 <div className='separator'></div>
                                 <div className='button_next_section' onClick={() => { setSection(secciones[2]) }}>
                                     <div className='button_next_section__text'>{t('sobre_proyecto__boton')}</div>
@@ -99,20 +105,23 @@ export function AboutProject() {
                             </div>
 
                             <div className='about_project__tabs_container__section_right'>
-                                <img src={maya} alt="maya" />
-                                <img src={react} alt="react" />
-                                <img src={csharp} className="chsarp_img" alt="csharp" />
-                                <img src={Meta_Quest} alt="Meta_Quest" />
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/VkJHwuK0NC8?si=UT1i1vUq9HphowTy"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen></iframe>
                             </div>
                         </article>
                         if (section == secciones[2]) return <article className='about_project__tabs_container__section'>
-                            <div className='about_project__tabs_container__section_left'>
+                            <div className='about_project__tabs_container__section_left rols_en_equip'>
                                 <h3 className='section_title'>{t('sobre_proyecto__seccion3')}</h3>
                                 <p className='section_description'>{t('sobre_proyecto__seccion3_descripcion')}</p>
                                 <p className='section_objetivos_item'><FaRegFileCode /><strong>{t('sobre_proyecto__seccion3_desarrollo_titulo')}</strong>
-                                 {t('sobre_proyecto__seccion3_desarrollo')}           </p>
-                                <p className='section_objetivos_item'><MdDesignServices/><strong>{t('sobre_proyecto__seccion3_diseño_titulo')}</strong>
-                                {t('sobre_proyecto__seccion3_diseño')}</p>
+                                    {t('sobre_proyecto__seccion3_desarrollo')}           </p>
+                                <p className='section_objetivos_item'><MdDesignServices /><strong>{t('sobre_proyecto__seccion3_diseño_titulo')}</strong>
+                                    {t('sobre_proyecto__seccion3_diseño')}</p>
                                 <div className='separator'></div>
                                 {/* <div className='button_next_section'>
                                     <div className='button_next_section__text'>{t('sobre_proyecto__boton')}</div>
@@ -124,7 +133,13 @@ export function AboutProject() {
                             </div>
 
                             <div className='about_project__tabs_container__section_right'>
-                            <img src={csharp} className="chsarp_img" alt="csharp" />
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/VkJHwuK0NC8?si=UT1i1vUq9HphowTy"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen></iframe>
                             </div>
                         </article>
                     })()
