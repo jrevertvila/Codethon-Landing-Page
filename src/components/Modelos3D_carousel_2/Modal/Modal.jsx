@@ -22,7 +22,7 @@ export default function Modal({ isOpen, onClose, title, subtitle, author, modelo
                     <footer className='modal-footer'>
                         <span className='modal-title'>{title}</span>
                         <span className='modal-subtitle'>{subtitle}</span>
-                        <span className='modal-autor'>Autor: {author}</span>
+                        <span className='modal-autor'>Autora: {author}</span>
                     </footer>
                 </div>
             </div>
