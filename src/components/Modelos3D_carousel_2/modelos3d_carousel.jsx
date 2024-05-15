@@ -18,7 +18,7 @@ export default function Modelos3d_2() {
             alt: "Modelo3d",
             src: "Fallacartoon1.png",
             modelo3d_filename: "Falla_low_color",
-            author: "",
+            author: "Alba",
         },
         modelo2: {
             title: t('modelo3d__modelo2_titulo'),
@@ -26,7 +26,7 @@ export default function Modelos3d_2() {
             alt: "Modelo3d",
             src: "planetA.png",
             modelo3d_filename: "Planeta",
-            author: "",
+            author: "Alba",
         },
         modelo3: {
             title: t('modelo3d__modelo3_titulo'),
@@ -34,7 +34,7 @@ export default function Modelos3d_2() {
             alt: "Modelo3d",
             src: "ayuntamiento.png",
             modelo3d_filename: "Ayuntamiento",
-            author: "",
+            author: "Alba",
             
         },
         modelo4: {
@@ -43,7 +43,7 @@ export default function Modelos3d_2() {
             alt: "Modelo3d",
             src: "farola.png",
             modelo3d_filename: "Farola",
-            author: "",
+            author: "Mar",
         },
         modelo5: {
             title: t('modelo3d__modelo5_titulo'),
@@ -51,7 +51,7 @@ export default function Modelos3d_2() {
             alt: "Modelo3d",
             src: "aerografo.png",
             modelo3d_filename: "Aerografo",
-            author: "",
+            author: "Mar",
         },
         modelo6: {
             title: t('modelo3d__modelo6_titulo'),
@@ -59,7 +59,7 @@ export default function Modelos3d_2() {
             alt: "Modelo3d",
             src: "banco.png",
             modelo3d_filename: "Banco",
-            author: "",
+            author: "Mar",
             
         },
         modelo7: {
@@ -68,7 +68,7 @@ export default function Modelos3d_2() {
             alt: "Modelo3d",
             src: "atril.png",
             modelo3d_filename: "Atril",
-            author: "",
+            author: "Maria",
         },
         modelo8: {
             title: t('modelo3d__modelo8_titulo'),
@@ -76,7 +76,7 @@ export default function Modelos3d_2() {
             alt: "Modelo3d",
             src: "cajagrupo.png",
             modelo3d_filename: "GrupoCajas",
-            author: "",
+            author: "Maria",
         },
         modelo9: {
             title: t('modelo3d__modelo9_titulo'),
@@ -84,7 +84,7 @@ export default function Modelos3d_2() {
             alt: "Modelo3d",
             src: "caretilla.png",
             modelo3d_filename: "Carretilla",
-            author: "",
+            author: "Maria",
         },
         modelo10: {
             title: t('modelo3d__modelo10_titulo'),
@@ -108,7 +108,7 @@ export default function Modelos3d_2() {
             alt: "Modelo3d",
             src: "fuente.png",
             modelo3d_filename: "Fuente",
-            author: "",
+            author: "Maria",
         },
         modelo13: {
             title: t('modelo3d__modelo13_titulo'),
@@ -140,7 +140,7 @@ export default function Modelos3d_2() {
             alt: "Modelo3d",
             src: "FilmotecaValencia.png",
             modelo3d_filename: "Filmoteca",
-            author: "Maria",
+            author: "Mar",
         },
         modelo17: {
             title: t('modelo3d__modelo17_titulo'),
