@@ -57,7 +57,7 @@ export function AboutProject() {
                                 <p className='section_description'>
                                     {t('sobre_proyecto__descripcion')}
                                 </p>
-                                <h4 className='section_objetivos'>Objetivos:</h4>
+                                <h4 className='section_objetivos'>{t('sobre_proyecto__objetivos_titulo')}</h4>
                                 <p className='section_objetivos_item'><IoMdCut />{t('sobre_proyecto__objetivo1')}</p>
                                 <p className='section_objetivos_item'><FaBrush />{t('sobre_proyecto__objetivo2')}</p>
                                 <p className='section_objetivos_item'><IoBuildSharp />{t('sobre_proyecto__objetivo3')}</p>
@@ -84,7 +84,7 @@ export function AboutProject() {
                                     {t('sobre_proyecto__seccion2_descripcion')}
 
                                 </p>
-                                <h4 className='section_objetivos'>Tecnologias:</h4>
+                                <h4 className='section_objetivos'>{t('sobre_proyecto__tecnologias_titulo')}</h4>
                                 <p className='section_objetivos_item'><BsUnity/><strong>{t('sobre_proyecto__seccion2_tecnologia1_nombre')}</strong>{t('sobre_proyecto__seccion2_tecnologia1')}</p>
                                 <p className='section_objetivos_item'><SiCsharp/><strong>{t('sobre_proyecto__seccion2_tecnologia2_nombre')}</strong>{t('sobre_proyecto__seccion2_tecnologia2')}</p>
                                 <p className='section_objetivos_item'><SiAutodeskmaya/><strong>{t('sobre_proyecto__seccion2_tecnologia3_nombre')}</strong>{t('sobre_proyecto__seccion2_tecnologia3')}</p>
@@ -109,7 +109,6 @@ export function AboutProject() {
                             <div className='about_project__tabs_container__section_left'>
                                 <h3 className='section_title'>{t('sobre_proyecto__seccion3')}</h3>
                                 <p className='section_description'>{t('sobre_proyecto__seccion3_descripcion')}</p>
-                                <h4 className='section_objetivos'>Objetivos:</h4>
                                 <p className='section_objetivos_item'><FaRegFileCode /><strong>{t('sobre_proyecto__seccion3_desarrollo_titulo')}</strong>
                                  {t('sobre_proyecto__seccion3_desarrollo')}           </p>
                                 <p className='section_objetivos_item'><MdDesignServices/><strong>{t('sobre_proyecto__seccion3_diseño_titulo')}</strong>
