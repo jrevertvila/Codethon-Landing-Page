@@ -73,14 +73,14 @@ export function AboutProject() {
                             </div>
 
                             <div className='about_project__tabs_container__section_right'>
-                            <iframe width="560" 
-                            height="315" 
-                            src="https://www.youtube.com/embed/jJ2rsG3D_po?si=NeYWapIFh9lkd3Un" 
-                            title="YouTube video player" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            referrerpolicy="strict-origin-when-cross-origin" 
-                            allowfullscreen></iframe>
+                                <iframe width="560" 
+                                height="315" 
+                                src="https://www.youtube.com/embed/jJ2rsG3D_po?si=NeYWapIFh9lkd3Un" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                allowfullscreen></iframe>
                             </div>
 
                         </article>
