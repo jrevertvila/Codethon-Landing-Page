@@ -74,7 +74,7 @@ export function AboutProject() {
 
                             <div className='about_project__tabs_container__section_right'>
                                 <iframe width="560" height="315"
-                                    src="https://youtu.be/jJ2rsG3D_po"
+                                    src="https://youtu.be/jJ2rsG3D_po?si=NeYWapIFh9lkd3Un"
                                     title="YouTube video player"
                                     frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
