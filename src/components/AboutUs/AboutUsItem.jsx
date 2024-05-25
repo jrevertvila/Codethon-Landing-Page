@@ -1,11 +1,34 @@
 import { FaLinkedin } from "react-icons/fa6";
 import { FaSquareGithub } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import { SiAdobe } from "react-icons/si";
 
 import { useTranslation } from 'react-i18next';
 
-export default function AboutUsItem({src, alt, nombre, edad, titulacion, rol, hrefLinkedin, hrefGit, email, style}) {
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+export default function AboutUsItem({ src, alt, nombre, edad, titulacion, rol, hrefLinkedin = "", hrefGit = "", email = "", portfolio = "", style }) {
     const { t } = useTranslation();
+    const notify = () => {
+        toast.success("Correo electrónico copiado al portapales", {
+            position: "bottom-center",
+            theme: "dark"
+        });
+    };
+
+
+    let copyToClipboard = (e) => {
+        let emailinput = document.getElementById('myEmail')
+        emailinput.select();
+        emailinput.setSelectionRange(0, 99999);
+        navigator.clipboard.writeText(emailinput.value);
+        alert("copied")
+        // navigator.clipboard.writeText(e).then(() => {})
+        // notify()
+    }
+
+
     return (
         <div className='aboutUs_container_item' style={style}>
             <div className='item_top'>
@@ -20,16 +43,31 @@ export default function AboutUsItem({src, alt, nombre, edad, titulacion, rol, hr
                 </section>
             </div>
             <footer className='item_bottom'>
-                <a href='' className='social_item linkedin_bg'>
+                <a href={hrefLinkedin} target="_blank" className='social_item linkedin_bg'>
                     <FaLinkedin /> Linkedin
                 </a>
-                <a href='' className='social_item github_bg'>
-                    <FaSquareGithub /> GitHub
-                </a>
-                <a href='' className='social_item email_bg'>
+                {
+                    hrefGit != "" ? (() => {
+                        return (<a href={hrefGit} target="_blank" className='social_item github_bg'>
+                            <FaSquareGithub /> GitHub
+                        </a>)
+                    })() : <></>
+                }
+
+                {
+                    portfolio != "" ? (() => {
+                        return (<a href={portfolio} target="_blank" className='social_item github_bg'>
+                            <SiAdobe /> Portfolio
+                        </a>)
+                    })() : <></>
+                }
+
+                <a href={"mailto: " + email} target="_blank" onClick={() => copyToClipboard(email)} className='social_item email_bg'>
                     <MdEmail /> Email
                 </a>
             </footer>
+            <input type="hidden" value={email} id="myEmail"></input>
+            <ToastContainer />
         </div>
     )
 }

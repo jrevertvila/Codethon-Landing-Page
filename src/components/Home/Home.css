@@ -64,7 +64,7 @@
     margin: 40px 0;
 } */
 
-.home_content_text button {
+.home_content_text a {
     background: none;
     font: inherit;
     cursor: pointer;

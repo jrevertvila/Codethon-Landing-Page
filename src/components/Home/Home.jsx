@@ -28,7 +28,7 @@ export function Home() {
                     <h1>{t('home__titulo_principal')}</h1>
                     <p>{t('home__titulo_principal_inmersio')}</p>
                     <span>{t('home__subtitulo')}</span>
-                    <button>{t('home__boton')}</button>
+                    <a href='#aboutproject'>{t('home__boton')}</a>
                 </div>
                 {/* <Canvas3DHome modelo3d_filename={"vision-pro/Scene.jsx"}/> */}
                 {/* <img className='vision-pro-img' src={vision_pro} alt="visio pro" /> */}
