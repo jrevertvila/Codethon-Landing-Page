@@ -169,6 +169,10 @@
         text-align: center;
     }
 
+    .home_content_text a {
+        align-self: unset;
+    }
+
     .home_content_text>span {
         align-self: center;
         margin-top: 5px;
